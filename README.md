@@ -10,7 +10,10 @@ To allow responders, crisis managers and decision-makers to understand phases, o
 ## Quick Start
 
 For offline usage without installation a pre-build version is available for download:
+
 [![Build MkDocs](https://github.com/SVA-Cybersecurity/R3SPOND/actions/workflows/main.yml/badge.svg)](https://github.com/SVA-Cybersecurity/R3SPOND/actions/workflows/main.yml)
+
+Launch by opening `RESPOND_START.html`in a browser and navigate through the framework from there.
 
 ## Installation und Build
 
