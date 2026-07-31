@@ -23,6 +23,17 @@ rs003:
     The quarantine network serves the temporary and short-term isolation of systems that may have been infected by malware or an attacker.
     If a quarantine network exists, a system can be isolated immediately after the detection of a suspected compromise, thereby preventing the incident from spreading to other systems or network areas.
     This isolation of individual systems is an initial measure that can be prepared in advance through the establishment of a quarantine network.
+  outro: |
+    Steps for setting up a quarantine network:
+
+    - Set up a quarantine VLAN with IP addresses
+    - Completely isolate the quarantine network from other systems in the organization
+    - Terminate the quarantine network at the firewall.
+    - Configure firewall logging for DROPPED and SUCCESSFUL connections for the VLAN.
+    - As a general rule, all incoming and outgoing communication is blocked by firewall rules.
+    - If exceptions are needed—for example, for analysis—these must be coordinated and configured individually with the IR service provider.
+    - Prohibit any further communication from the quarantine network to the Internet and other networks, and verify the isolation.
+    - Verify or enable DNS functionality within the quarantine network.
 rs004:
   title: Baselining of Infrastructure
   anchor: baselining-of-infrastructure

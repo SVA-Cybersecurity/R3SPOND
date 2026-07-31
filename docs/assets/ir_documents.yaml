@@ -1,0 +1,10 @@
+# This File serves as helper for multi language support for adding custom pdf files to the framework
+# How to include custom pdfs
+  # 1. Place the file in docs/ir_documents/
+  # 2. Prepare a link for each local in locales/*/documents.yaml
+  # 3. Set a universal identifier for the document in docs/assets/ir_documents.yaml that calls the link from locales
+  # 4. Use the universial identifier to link the document step content
+  # 5. Add the universial identifier to the list of documents in docs/assets/data/steps
+
+paper:
+  # examplepaper: "documents.documentsname"

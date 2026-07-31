@@ -1,0 +1,4 @@
+# Prepare a link for each you want to include
+
+# example:
+  # documentsname: "[:fontawesome-solid-book: Some important IR playbook](../../ir_documents/some_important_ir_playbook.pdf)"

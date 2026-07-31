@@ -23,6 +23,17 @@ rs003:
     Das Quarantänenetzwerk dient der vorübergehenden und kurzfristigen Isolierung von Systemen, die möglicherweise durch eine Malware oder einen Angreifer infiziert wurden.
     Besteht ein Quarantänenetzwerks kann ein System unmittelbar nach der Erkennung einer mutmaßlichen Kompromittierung darin isoliert und auf diese Weise eine Ausweitung des Vorfalls auf andere Systeme oder Netzwerkbereiche verhindert werden.
     Bei dieser Isolierung einzelner Systeme handelt es sich um eine Erstmaßnahme, die bereits im Vorfeld durch die Einrichtung eines Quarantänenetzwerks vorbereitet werden kann.
+  outro: |
+  Schritte zur Vorbereitung eines Quarantänenetzwerks:
+
+  - Einrichtung Quarantäne-VLAN mit IP-Adressen
+  - vollständige Isolation des Quarantänenetzwerks gegenüber anderer Systeme der Organisation
+  - Quarantänenetzwerk an der Firewall terminieren.
+  - Firewall-Logging für DROPPED und SUCCESSFULL Verbindungen für das VLAN konfigurieren.
+  - grundsätzlich wird jegliche eingehende und ausgehende Kommunikation durch Firewallregeln unterbunden.
+  - Werden Freischaltung z. B. für die Analyse benötigt, werden diese einzeln mit dem IR Dienstleister abgestimmt und eingerichtet.
+  - Jegliche weitere Kommunikationen aus dem Quarantänenetzwerk in das Internet und andere Netzwerke verbieten und die Isolation überprüfen.
+  - Funktionalität von DNS im Quarantänenetzwerk überprüfen bzw. aktivieren.
 rs004:
   title: Baselining der Infrastruktur
   anchor: baselining-der-infrastruktur
