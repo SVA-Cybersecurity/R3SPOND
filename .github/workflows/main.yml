@@ -1,7 +1,7 @@
 stages:
   - build
 
-r3spond_build:
+build:
   stage: build
   image: python:3.11
   before_script:
