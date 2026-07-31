@@ -1,0 +1,298 @@
+- id: RP000
+  link: pages/response_phases/rp000.html
+  title: response_phases.rp000.title
+  content: rp000.md
+  responsibilities:
+    - general.responsibilities.total_org
+  process_map: response_phases.rp000.process_map
+  steps:
+  - rs000.md
+  - rs001.md
+  - rs002.md
+  - rs062.md
+  - rs003.md
+  - rs004.md
+  - rs012.md
+  - rs005.md
+  - rs006.md
+  - rs007.md
+  - rs008.md
+  - rs097.md
+  - rs049.md
+  - rs009.md
+  - rs010.md
+  - rs011.md
+  documents: []
+  ext_links:
+  - bsinotfallmanagement
+  - bsibcm
+- id: RP001
+  link: pages/response_phases/rp001.html
+  title: response_phases.rp001.title
+  content: rp001.md
+  responsibilities: []
+  process_map: response_phases.rp001.process_map
+  steps:
+  - rs012.md
+  - rs013.md
+  - rs014.md
+  - rs015.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP002
+  link: pages/response_phases/rp002.html
+  title: response_phases.rp002.title
+  content: rp002.md
+  responsibilities:
+    - general.responsibilities.emergency_teams
+  process_map: response_phases.rp002.process_map
+  steps:
+  - rs017.md
+  - rs018.md
+  - rs019.md
+  - rs029.md
+  - rs020.md
+  - rs021.md
+  - rs102.md
+  - rs022.md
+  - rs023.md
+  - rs016.md
+  documents: []
+  ext_links:
+  - bsiaptliste
+- id: RP003
+  link: pages/response_phases/rp003.html
+  title: response_phases.rp003.title
+  content: rp003.md
+  responsibilities: []
+  process_map: response_phases.rp003.process_map
+  steps:
+  - rs024.md
+  - rs025.md
+  - rs026.md
+  - rs027.md
+  - rs028.md
+  - rs030.md
+  - rs031.md
+  - rs032.md
+  - rs012.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP004
+  link: pages/response_phases/rp004.html
+  title: response_phases.rp004.title
+  content: rp004.md
+  responsibilities: []
+  process_map: response_phases.rp004.process_map
+  steps:
+  - rs033.md
+  - rs034.md
+  - rs035.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP005
+  link: pages/response_phases/rp005.html
+  title: response_phases.rp005.title
+  content: rp005.md
+  responsibilities:
+    - general.responsibilities.crisis_team
+  process_map: response_phases.rp005.process_map
+  steps:
+  - rs036.md
+  - rs037.md
+  - rs038.md
+  - rs043.md
+  - rs039.md
+  - rs040.md
+  - rs041.md
+  - rs042.md
+  - rs044.md
+  - rs110.md
+  - rs045.md
+  - rs016.md
+  documents: []
+  ext_links:
+  - bsimeldeportal
+  - landesdatenschutz
+  - bsiaptliste
+  - zaclong
+- id: RP006
+  link: pages/response_phases/rp006.html
+  title: response_phases.rp006.title
+  content: rp006.md
+  responsibilities: []
+  process_map: response_phases.rp006.process_map
+  steps:
+  - rs046.md
+  - rs047.md
+  - rs048.md
+  - rs049.md
+  - rs050.md
+  - rs103.md
+  - rs051.md
+  - rs052.md
+  documents: []
+  ext_links: []
+- id: RP007
+  link: pages/response_phases/rp007.html
+  title: response_phases.rp007.title
+  content: rp007.md
+  responsibilities:
+    - general.responsibilities.emergency_teams
+  process_map: response_phases.rp007.process_map
+  steps:
+  - rs006.md
+  - rs054.md
+  - rs055.md
+  - rs056.md
+  - rs059.md
+  - rs016.md
+  documents:
+  - notbetrieb
+  ext_links: []
+- id: RP008
+  link: pages/response_phases/rp008.html
+  title: response_phases.rp008.title
+  content: rp008.md
+  responsibilities:
+    - general.responsibilities.crisis_team
+    - general.responsibilities.it_emergency_team
+  process_map: response_phases.rp008.process_map
+  steps:
+  - rs036.md
+  - rs037.md
+  - rs038.md
+  - rs043.md
+  - rs057.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP009
+  link: pages/response_phases/rp009.html
+  title: response_phases.rp009.title
+  content: rp009.md
+  responsibilities:
+    - general.responsibilities.communication_emergency_team
+  process_map: response_phases.rp009.process_map
+  steps:
+  - rs063.md
+  - rs100.md
+  - rs064.md
+  - rs065.md
+  - rs066.md
+  - rs067.md
+  - rs068.md
+  - rs016.md
+  documents: []
+  ext_links:
+  - resikommunikation
+- id: RP010
+  link: pages/response_phases/rp010.html
+  title: response_phases.rp010.title
+  content: rp010.md
+  responsibilities:
+    - general.responsibilities.communication_emergency_team
+  process_map: response_phases.rp010.process_map
+  steps:
+  - rs101.md
+  - rs100.md
+  - rs080.md
+  - rs065.md
+  - rs081.md
+  - rs082.md
+  - rs083.md
+  - rs084.md
+  - rs085.md
+  - rs086.md
+  - rs087.md
+  - rs016.md
+  documents: []
+  ext_links:
+  - resikommunikation
+- id: RP011
+  link: pages/response_phases/rp011.html
+  title: response_phases.rp011.title
+  content: rp011.md
+  responsibilities: []
+  process_map: response_phases.rp011.process_map
+  precondition: RS041
+  steps:
+  - rs069.md
+  - rs070.md
+  - rs071.md
+  - rs072.md
+  - rs074.md
+  - rs075.md
+  - rs076.md
+  - rs077.md
+  - rs078.md
+  - rs073.md
+  - rs079.md
+  documents: []
+  ext_links: []
+- id: RP012
+  link: pages/response_phases/rp012.html
+  title: response_phases.rp012.title
+  content: rp012.md
+  responsibilities:
+    - general.responsibilities.emergency_teams
+  process_map: response_phases.rp012.process_map
+  steps:
+  - rs058.md
+  - rs059.md
+  - rs060.md
+  - rs061.md
+  - rs062.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP013
+  link: pages/response_phases/rp013.html
+  title: response_phases.rp013.title
+  content: rp013.md
+  responsibilities: []
+  process_map: response_phases.rp013.process_map
+  steps:
+  - rs088.md
+  - rs089.md
+  - rs090.md
+  - rs091.md
+  - rs092.md
+  - rs106.md
+  - rs107.md
+  - rs059.md
+  - rs109.md
+  - rs105.md
+  - rs016.md
+  documents: []
+  ext_links: []
+- id: RP014
+  link: pages/response_phases/rp014.html
+  title: response_phases.rp014.title
+  content: rp014.md
+  responsibilities: []
+  process_map: response_phases.rp014.process_map
+  steps:
+  - rs093.md
+  - rs094.md
+  - rs099.md
+  - rs108.md
+  documents: []
+  ext_links: []
+- id: RP015
+  link: pages/response_phases/rp015.html
+  title: response_phases.rp015.title
+  content: rp015.md
+  responsibilities: []
+  process_map: response_phases.rp015.process_map
+  steps:
+  - rs104.md
+  - rs098.md
+  - rs095.md
+  - rs096.md
+  - rs111.md
+  documents: []
+  ext_links: []

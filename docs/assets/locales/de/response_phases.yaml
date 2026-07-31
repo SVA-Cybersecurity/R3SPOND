@@ -1,0 +1,65 @@
+rp000:
+  title: "Vorbereitung"
+  description: "Alle hier aufgeführten Maßnahmen sind langfristige Schritte zur Vorbreitung auf einen potentiellen IT-Sicherheitsvorfall. Bei der Bewältigung eines akuten Vorfalls sind die vorbereitenden Maßnahmen in dieser Form nicht anwendbar. Der Einstieg in die Vorfallsbewältigung erfolgt in den nachfolgenden Phasen."
+  process_map: ../../assets/images/de/rp000_vorbereitung.png
+rp001:
+  title: "Detektion"
+  description: "Maßnahmen zur Erkennung von Anzeichen einer Kompromittierung sind, anders als die meisten Schritte der anderen Phasen, nicht einmalig sondern kontinuierlich auszuführen. Ziel ist es auffällige Aktivitäten frühzeitig zu identifizieren, um entsprechende Schutzmaßnahmen einleiten zu können."
+  process_map: ../../assets/images/de/rp001_detektion.png
+rp002:
+  title: "Analyse"
+  description: "Während der Analyse wird systematisch geprüft, ob es sich tatsächlich um einen Sicherheitsvorfall handelt, wie schwerwiegend dieser ist und welche Systeme, Anwendungen und Dienste betroffen sind. Ziel ist die Bestimmung von Ursachen und Schadensausmaß. Die Analyse liefert die Entscheidungsgrundlage für die Initiierung geeigneter Maßnahmen zur Eindämmung und Bewältigung des Vorfalls."
+  process_map: ../../assets/images/de/rp002_analyse.png
+rp003:
+  title: "Erstmaßnahmen und Eindämmung"
+  description: "Liegt eine bestätigte Infektion mit Ransomware vor, sollten umgehend Eindämmungsmaßnahmen ergriffen werden. Aufgrund der Kritikalität kann auch der bloße Verdacht ausreichen, um entsprechende Maßnahmen einzuleiten."
+  process_map: ../../assets/images/de/rp003_erstmassnahmen_eindaemmung.png
+rp004:
+  title: "Einberufung Krisenstab"
+  description: "Die Behandlung des IT-Sicherheitsvorfalls und dessen Folgen sollten als Projekt betrachtet werden. Der Krisenstab ist ein planendes, koordinierendes, informierendes, beratendes und unterstützendes Organ. Er stellt eine besondere temporäre Aufbauorganisation dar, die die normale Aufbauorganisation zur Bewältigung eines Notfalls durchbricht und abteilungsübergreifende Kompetenzen bündelt."
+  process_map: ../../assets/images/de/rp004_einberufung_krisenstab.png
+rp005:
+  title: "Initiales Krisenmeeting"
+  description: "Während des initialen Krisenmeetings muss eine erste Lagefeststellung erfolgen, auf deren Basis einige grundlegende Entscheidungen getroffen werden, welche Einfluss auf das weitere Vorgehen zur Krisenbewältigung haben."
+  process_map: ../../assets/images/de/rp005_initiales_krisenmeeting.png
+rp006:
+  title: "Logistik"
+  description: "Die Phase Logistik beinhaltet überwiegend organisatorische Maßnahmen, welche die Arbeitsfähigkeit von Krisenstab und Notfallteams gewährleisten."
+  process_map: ../../assets/images/de/rp006_logistik.png
+rp007:
+  title: "Notbetrieb"
+  description: "Ein Notbetrieb ermöglicht der betroffenen Organisation Handlungsfähigkeit in einem schwerwiegenden IT-Sicherheitsvorfall. Dazu gehören die grundlegenden Fähigkeiten einer Organisation, die geeignet sind, existenziellen Schaden abzuwenden. Der Notbetrieb umfasst nur Geschäftsprozesse, die die Organisation unbedingt zum Überleben braucht. Alle anderen Geschäftsprozesse haben sich dieser Prämisse unterzuordnen und werden im Notbetrieb nicht berücksichtigt."
+  process_map: ../../assets/images/de/rp007_notbetrieb.png
+rp008:
+  title: "Regelmäßige Statusmeetings"
+  description: "In regelmäßigen Statusmeetings erfolgt die interne Abstimmung zur Koordination der Vorfallsbewältigung. Der Ablauf der regelmäßigen Statusmeetings folgt dem unten dargestellten Prozess zur Bewältigung eines IT-Sicherheitsvorfalls. Die regelmäßigen Meetings werden bis zum Abschluss des Vorfalls abgehalten. Mit Fortschreiten der Vorfallsbewältigung kann jedoch die Meeting-Frequenz reduziert werden."
+  process_map: ../../assets/images/de/rp008_regelmaessige_statusmeetings.png
+  incident_response_process: "![Bewältigung eines IT-Sicherheitsvorfalls](../../assets/images/de/bewaeltigungsprozess_sicherheitsvorfall.png){width=auto}"
+rp009:
+  title: "Interne Kommunikation"
+  description: "Ziel der internen Kommunikation ist in erster Linie die Bewältigung des Sicherheitsvorfalls. Dabei sollte berücksichtigt werden, dass Teile der intern kommunizierten Inhalte auch nach extern gelangen können und sehr wahrscheinlich auch werden. Daher ist eine enge Abstimmung mit der externen Kommunikation ([RP010](rp010.md)) unerlässlich."
+  process_map: ../../assets/images/de/rp009_interne_kommunikation.png
+rp010:
+  title: "Externe Kommunikation"
+  description: "Ziel der externen Kommunikation ist die Information verschiedener Gruppen über den IT-Sicherheitsvorfall. Die Qualität der Kommunikation nach außen hat maßgeblichen Einfluss auf das öffentliche Ansehen, daher sollten einige Kommunikationsgrundsätze berücksichtigt werden, um einen Image-Schaden zu vermeiden. Darüber hinaus muss eine enge Abstimmung mit der internen Kommunikation ([RP009](rp009.md)) erfolgen."
+  process_map: ../../assets/images/de/rp010_externe_kommunikation.png
+rp011:
+  title: "Lösegeldverhandlungen"
+  description: "Liegt eine Lösegeldforderung vor, kann es sinnvoll mit den Angreifern in Verhandlungen zu treten. Auch wenn keine tatsächliche Zahlungsabsicht besteht, kann die Lösegeldverhandlung genutzt werden, um Zeit für die Koordination und Umsetzung anderer Maßnahmen zu gewinnen."
+  process_map: ../../assets/images/de/rp011_loesegeldverhandlungen.png
+rp012:
+  title: "Bereinigung"
+  description: "Während der Bereinigung erfolgt die dauerhafte Entfernung der Bedrohung und die Schließung ausgenutzter Sicherheitslücken durch Behebung von Schwachstellen. Dazu gehören Maßnahmen wie das Entfernen von Schadsoftware, das Deaktivieren kompromittierter Konten, das Einspielen von Patches sowie das Anpassen von Konfigurationen und Sicherheitsrichtlinien. Ziel ist es, die Ursachen des Vorfalls vollständig zu eliminieren, um ein erneutes Auftreten in gleicher Form zu verhindern."
+  process_map: ../../assets/images/de/rp012_bereinigung.png
+rp013:
+  title: "Wiederaufbau"
+  description: "Der sichere Wieder- und Neuaufbau der Infrastruktur ist ein Projekt, das mehrere Wochen bis Monate in Anspruch nimmt. Dazu gehört das Neuaufsetzen oder Wiederherstellen betroffener Systeme aus vertrauenswürdigen Backups, das Revalidieren der Systemintegrität sowie das erneute Integrieren in die Produktionsumgebung. Parallel werden verstärkte Monitoring-Maßnahmen eingesetzt, um eine erneute Kompromittierung auszuschließen. Ziel ist die vollständige und abgesicherte Rückkehr zum Normalbetrieb, ohne erneute Kompromittierung."
+  process_map: ../../assets/images/de/rp013_wiederaufbau.png
+rp014:
+  title: "Vorfallsabschluss"
+  description: "Die Phase Vorfallsabschluss markiert das Ende der aktiven Bewältigung eines Sicherheitsvorfalls. Alle durchgeführten Maßnahmen werden abschließend dokumentiert, und der Vorfall wird formal für ageschlossen erklärt, sobald keine akute Bedrohung mehr besteht. Nachbereitende Maßnahmen sowie der Wiederaufbau können über den formalen Vorfallsabschluss hinaus anhalten."
+  process_map: ../../assets/images/de/rp014_vorfallsabschluss.png
+rp015:
+  title: "Nachbereitung"
+  description: "Während der Nachbereitung des Sicherheitsvorfalls erfolgt die strategische Aufarbeitung der Vorfallsbewältigung und es werden Projekte zur langfristigen Verbesserung der IT-Sicherheit geplant und angegangen. Daher wird die Nachbereitung über den Vorfallsabschluss hinaus einige Zeit in Anspruch nehmen."
+  process_map: ../../assets/images/de/rp015_nachbereitung.png

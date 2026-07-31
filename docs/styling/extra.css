@@ -1,0 +1,212 @@
+/* Light Mode Theme */
+[data-md-color-scheme="r3spond_light"] {
+  --md-primary-fg-color: #0081C6;
+  --md-primary-fg-color--light: #0081C6;
+  --md-primary-fg-color--dark: #0081C6;
+  --md-accent-fg-color: #0081C6;
+  --md-accent-fg-color--transparent: rgba(66, 165, 245, 0.1);
+  --md-default-bg-color: #ffffff8e;
+  --md-default-fg-color: #212121;
+  --md-footer-fg-color: #0081C6;
+  --md-typeset-color: #212121;
+  --md-typeset-a-color: #0081C6;
+  --md-matrix-phase-color: #f7f5f5d8;
+  --md-matrix-step: #a3a1a1;
+  --md-matrix-substep: #dbdbdb;
+  --md-header-fg-color: #f7f5f5;
+  --md-header-bg-color: #000000;
+  --md-grid-card-lines: #cac8c8;
+}
+
+/* Dark Mode Theme */
+[data-md-color-scheme="r3spond_dark"] {
+  --md-primary-fg-color:#58C6F1;
+  --md-primary-fg-color--light: #58C6F1;
+  --md-primary-fg-color--dark: #58C6F1;
+  --md-primary-text-color:  #E0E0E0;
+  --md-accent-fg-color: #58C6F1;
+  --md-accent-fg-color--lighter: #E0E0E0;
+  --md-default-bg-color: #242222;
+  --md-default-fg-color: #E0E0E0;
+  --md-default-fg-color--light: #E0E0E0; /* active toc topic, headline*/
+  --md-typeset-color: #E0E0E0;
+  --md-typeset-a-color: #58C6F1;
+  --md-matrix-phase-color: #474849;
+  --md-matrix-step: #a3a1a1;
+  --md-matrix-substep: #5f5f5f;
+  --md-header-fg-color: #474849;
+  --md-header-bg-color: #000000;
+  --md-grid-card-lines: #474849;
+}
+
+/* Erweitert den Inhaltsbereich auf die gesamte Bildschirmbreite */
+.md-grid {
+  max-width: 100%;
+}
+
+/* Anpassung Header-Farben */
+.md-header{
+  background-color: var(--md-header-bg-color);
+}
+.md-header__button {
+  margin-top: 0.6rem;
+}
+.md-tabs__item {
+  color: var(--md-header-fg-color);
+}
+.md-search {
+  color: var(--md-header-fg-color);
+}
+
+.section-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Matrix Styling */
+.matrix-container {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-bg-color);
+  align-items: start;
+  margin: 0 auto;
+  font-size: 14px;
+  max-width: none;
+}
+.phase {
+  background: var(--md-matrix-phase-color);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  min-width: 210px;
+}
+.step-cell {
+  display: block;
+  position: relative;
+  border: 1px solid var(--md-matrix-step);
+  margin-top: 10px;
+  font-size: 12px;
+}
+.substep-cell {
+  display: none;
+  position: relative;
+  padding-left: 3px;
+  margin-left: 3px;
+  font-size: 12px;
+  background: var(--md-matrix-substep);
+}
+.step-cell a, .substep-cell a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--md-typeset-color);
+  border: 1px solid var(--md-matrix-step);
+  cursor:pointer;
+}
+.step-cell a:hover, .substep-cell a:hover {
+  background: var(--md-primary-fg-color);
+  color:  var(--md-matrix-colums-color);
+}
+.step-cell a:focus, .substep-cell a:focus {
+  background: var(--md-primary-fg-color);
+  color:  var(--md-matrix-colums-color);
+}
+.md-typeset .task-list-indicator:before {
+  background-color:var(--md-matrix-colums-color);
+}
+.md-typeset [type=checkbox]:checked+.task-list-indicator:before {
+  background-color:var(--md-primary-fg-color);
+}
+.md-typeset .grid.cards > ul > li{
+  border: 2px solid var(--md-grid-card-lines);
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border: 2px solid var(--md-grid-card-lines);
+}
+.md-typeset hr {
+  border-bottom: .05rem solid var(--md-grid-card-lines);
+}
+.expand-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--md-matrix-phase-color);
+  cursor: pointer;
+  background-color: var(--md-matrix-step);
+  padding: 0;
+  user-select: none;
+  z-index: 1;
+}
+.expand-handle--active {
+  background-color: var(--md-primary-fg-color);
+}
+.md-typeset blockquote {
+  border-left: .2rem solid var(--md-primary-fg-color)
+}
+
+/* === Matrix Toolbar Styling === */
+.matrix-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px;
+  background: var(--md-matrix-phase-color);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
+  margin-bottom: 18px;
+  margin-top: 8px;
+  min-height: 48px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.matrix-toolbar button {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--md-typeset-color);
+  background: var(--md-matrix-phase-color);
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  outline: none;
+}
+
+.matrix-toolbar button:hover {
+  background: var(--md-accent-fg-color);
+}
+
+.matrix-toolbar button:active {
+  background: var(--md-primary-fg-color--dark);
+  transform: scale(0.98);
+}
+
+/* === Matrix Tag Filter Buttons === */
+.matrix-tag-filter-btn {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-left: 6px;
+  background: var(--md-primary-fg-color--light);
+  color: #fff;
+  border: none;
+  transition: background 0.2s, opacity 0.2s;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+}
+
+.matrix-tag-filter-btn-active {
+  background: var(--md-accent-fg-color) !important;
+}

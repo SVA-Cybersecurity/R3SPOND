@@ -1,0 +1,121 @@
+site_name: R3SPOND Incident Response Framework
+copyright: R3SPOND Incident Response Framework
+
+# theme configuration
+theme:
+  name: material
+  logo: "styling/r3spond_logo.png"
+  favicon: styling/r3spond_browsericon.png
+  features:
+    - toc.integrate
+    - navigation.top
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+  palette:
+    - scheme: r3spond_light
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: r3spond_dark
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+extra:
+  generator: false
+  custom_build: false
+  alternate:
+    - name: Deutsch
+      link: /de/
+      lang: de
+    - name: English
+      link: /en/
+      lang: en
+
+plugins:
+  - offline
+  - search
+  - macros:
+      include_yaml:
+        - docs/assets/external_links.yml
+        - docs/assets/icons.yml
+  - glightbox
+  - i18n:
+      languages:
+        - locale: de
+          name: Deutsch
+          build: true
+          nav:
+            - R3SPOND IR Framework: "index.md"
+            - Response-Phasen:
+              - Vorbereitung: "pages/response_phases/rp000.md"
+              - Detektion: "pages/response_phases/rp001.md"
+              - Analyse: "pages/response_phases/rp002.md"
+              - Erstmaßnahmen und Eindämmung: "pages/response_phases/rp003.md"
+              - Einberufung Krisenstab: "pages/response_phases/rp004.md"
+              - Initiales Krisenmeeting: "pages/response_phases/rp005.md"
+              - Logistik: "pages/response_phases/rp006.md"
+              - Notbetrieb: "pages/response_phases/rp007.md"
+              - Regelmäßige Statusmeetings: "pages/response_phases/rp008.md"
+              - Interne Kommunikation: "pages/response_phases/rp009.md"
+              - Externe Kommunikation: "pages/response_phases/rp010.md"
+              - Lösegeldverhandlungen: "pages/response_phases/rp011.md"
+              - Bereinigung: "pages/response_phases/rp012.md"
+              - Wiederaufbau: "pages/response_phases/rp013.md"
+              - Vorfallsabschluss: "pages/response_phases/rp014.md"
+              - Nachbereitung: "pages/response_phases/rp015.md"
+            - Materialien & Verweise:
+              - Externe Ressourcen: "pages/materials_references/external_links.md"
+              - Meldepflichten: "pages/materials_references/reporting_obligations.md"
+        - locale: en
+          default: true
+          name: English
+          build: true
+          nav:
+            - R3SPOND IR Framework: "index.md"
+            - Response Phases:
+              - Preparation: "pages/response_phases/rp000.md"
+              - Detection: "pages/response_phases/rp001.md"
+              - Analysis: "pages/response_phases/rp002.md"
+              - Containment: "pages/response_phases/rp003.md"
+              - Activation of Crisis Management Team: "pages/response_phases/rp004.md"
+              - Initial Crisis Meeting: "pages/response_phases/rp005.md"
+              - Logistics: "pages/response_phases/rp006.md"
+              - Emergency Operations: "pages/response_phases/rp007.md"
+              - Regular Crisis Meetings: "pages/response_phases/rp008.md"
+              - Internal Communication: "pages/response_phases/rp009.md"
+              - External Communication: "pages/response_phases/rp010.md"
+              - Negotiation Over Ransom: "pages/response_phases/rp011.md"
+              - Eradication: "pages/response_phases/rp012.md"
+              - Recovery: "pages/response_phases/rp013.md"
+              - Incident Closure: "pages/response_phases/rp014.md"
+              - Follow-up: "pages/response_phases/rp015.md"
+            - Materials & References:
+              - External Resources: "pages/materials_references/external_links.md"
+              - Reporting Obligations: "pages/materials_references/reporting_obligations.md"
+      fallback_to_default: true
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: true
+  - abbr
+  - attr_list
+  - md_in_html
+  - pymdownx.snippets:
+      auto_append:
+        - docs/pages/materials_references/abbreviations_define.de.md # tooltips for abbreviations
+        - docs/pages/materials_references/abbreviations_define.en.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - markdown_include.include:  # include snippets
+      base_path: docs
+  - pymdownx.blocks.caption
+
+extra_css:
+  - styling/extra.css
+extra_javascript:
+  - assets/matrix.js

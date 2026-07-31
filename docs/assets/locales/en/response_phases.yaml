@@ -1,0 +1,65 @@
+rp000:
+  title: "Preparation"
+  description: "All measures listed here are long-term steps to prepare for a potential IT security incident. In the event of an acute incident, the preparatory measures in this form are not applicable. The entry into incident management takes place in the subsequent phases."
+  process_map: ../../assets/images/en/rp000_preparation.png
+rp001:
+  title: "Detection"
+  description: "Measures for detecting signs of compromise, unlike most steps in other phases, are not performed once but must be carried out continuously. The goal is to identify suspicious activities at an early stage in order to initiate appropriate protective measures."
+  process_map: ../../assets/images/en/rp001_detection.png
+rp002:
+  title: "Analysis"
+  description: "During analysis a systematic examination is conducted to determine whether it is indeed a security incident, to evaluate its severity, and to identify effected systems, applications and services. The objective is to identify the causes and assess the extent of the damage. The analysis provides the basis for decisions regarding the initiation of appropriate measures to contain and manage the incident."
+  process_map: ../../assets/images/en/rp002_analysis.png
+rp003:
+  title: "Containment"
+  description: "If a ransomware infection is confirmed, containment measures should be taken immediately. Given the critical nature of the situation, even a mere suspicion may be sufficient to initiate appropriate measures."
+  process_map: ../../assets/images/en/rp003_containment.png
+rp004:
+  title: "Activation of Crisis Management Team"
+  description: "The handling of the IT security incident and its consequences should be treated as a project. The crisis management team is a body responsible for planning, coordinating, informing, advising, and providing support. It constitutes a special temporary organizational structure that supersedes the normal organizational structure to manage an emergency and brings together cross-departmental expertise."
+  process_map: ../../assets/images/en/rp004_activation_of_crisis_management_team.png
+rp005:
+  title: "Initial Crisis Meeting"
+  description: "During the initial crisis meeting, an initial assessment of the situation must be conducted, based on which several fundamental decisions will be made that will influence the subsequent steps in crisis management."
+  process_map: ../../assets/images/en/rp005_initial_crisis_meeting.png
+rp006:
+  title: "Logistics"
+  description: "The logistics phase primarily involves organizational measures designed to ensure the operational readiness of the crisis management team and emergency response teams."
+  process_map: ../../assets/images/en/rp006_logistics.png
+rp007:
+  title: "Emergency Operations"
+  description: "Emergency operation enables the affected organization to remain operational during a serious IT security incident. This includes the organization’s core capabilities necessary to prevent catastrophic damage. The emergency operation covers only those business processes that are essential to the organization’s survival. All other business processes must be subordinated to this priority and are not included in the disaster recovery plan."
+  process_map: ../../assets/images/en/rp007_emergency_operations.png
+rp008:
+  title: "Regular Crisis Meetings"
+  description: "Internal coordination of incident response takes place during regular status meetings. The format of these regular status meetings follows the process for handling an IT security incident outlined below. These regular meetings are held until the incident is resolved. However, as the incident response progresses, the frequency of the meetings may be reduced."
+  process_map: ../../assets/images/en/rp008_regular_crisis_meetings.png
+  incident_response_process: "![Handling an IT security incident](../../assets/images/en/security_incident_response_process.png){width=auto}"
+rp009:
+  title: "Internal Communication"
+  description: "The primary goal of internal communication is to resolve the security incident. It is important to bear in mind that some of the information shared internally may — and most likely will — become public. Therefore, close coordination with external communications ([RP010](rp010.md)) is essential."
+  process_map: ../../assets/images/en/rp009_internal_communication.png
+rp010:
+  title: "External Communication"
+  description: "The goal of external communication is to inform various groups about the IT security incident. The quality of external communication has a significant impact on public perception; therefore, certain communication principles should be followed to avoid damage to the organization’s reputation. In addition, close coordination with internal communication ([RP009](rp009.md)) is required."
+  process_map: ../../assets/images/en/rp010_external_communication.png
+rp011:
+  title: "Negotiation Over Ransom"
+  description: "If a ransom demand is made, it may be advisable to enter into negotiations with the attackers. Even if there is no actual intention to pay, ransom negotiations can be used to buy time for coordinating and implementing other measures."
+  process_map: ../../assets/images/en/rp011_negotiation_over_ransom.png
+rp012:
+  title: "Eradication"
+  description: "During the eradication process, the threat is permanently removed and exploited security vulnerabilities are closed by addressing the underlying weaknesses. This includes measures such as removing malware, deactivating compromised accounts, applying patches, and adjusting configurations and security policies. The goal is to completely eliminate the root causes of the incident to prevent it from recurring in the same form."
+  process_map: ../../assets/images/en/rp012_eradication.png
+rp013:
+  title: "Recovery"
+  description: "The secure restoration and reconstruction of the infrastructure is a project that takes several weeks to months. This includes reinstalling or restoring affected systems from trusted backups, revalidating system integrity, and reintegrating them into the production environment. At the same time, enhanced monitoring measures are implemented to prevent further compromise. The goal is a complete and secure return to normal operations without further compromise."
+  process_map: ../../assets/images/en/rp013_recovery.png
+rp014:
+  title: "Incident Closure"
+  description: "The incident closure phase marks the end of the active response to a security incident. All measures taken are documented, and the incident is formally declared closed once there is no longer an immediate threat. Follow-up measures and recovery efforts may continue beyond the formal closure of the incident."
+  process_map: ../../assets/images/en/rp014_incident_closure.png
+rp015:
+  title: "Follow-up"
+  description: "During the follow-up, a strategic analysis of the incident response is conducted and projects aimed at improving IT security in the long term are planned and implemented. For this reason, the follow-up will take some time to complete, even after the incident has been closed."
+  process_map: ../../assets/images/en/rp015_followup.png

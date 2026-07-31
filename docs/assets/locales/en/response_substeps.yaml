@@ -1,0 +1,1209 @@
+rss0000:
+  title: "Analysis of Potential Attacks"
+  anchor: analysis-of-potential-attacks
+  intro: |
+    For effective preparation for severe security incidents, organizations should continuously analyze both long-term developments in the threat landscape and short-term emerging attack phenomena.
+    Only through this ongoing observation and assessment appropriate prevention and response measures can be planned and implemented.
+  outro: |
+    Reports on the threat landscape and its development in the European and German context are published annually, for example, by ENISA (ENISA Threat Landscape) and BSI (The State of IT Security in Germany).
+    Current warnings about new attack phenomena and vulnerabilities are published, for example, by the Cybersecurity & Infrastructure Security Agency (CISA) or national cyber security organizations like CERT-Bund.
+rss0001:
+  title: "Identification of Critical Systems and Processes"
+  anchor: identification-of-critical-systems-and-processes
+  intro: |
+    A prioritization is derived from the criticality of business processes and the interdependencies of IT systems, which forms the basis for establishing emergency operations and initiating recovery.
+    Furthermore, the prioritization of business processes and their associated systems and applications can be used as criteria for incident assessment and escalation.
+  outro: |
+    To respond to a severe IT security incident in a timely and appropriate manner while maintaining the organization's ability to act, the vital processes must be identified.
+    Additionally, the dependencies between different processes should be documented, as well as which IT systems and applications form the basis for their smooth operation.
+    To develop a robust prioritization, a Business Impact Analysis (BIA) should be conducted and a Business Continuity Management (BCM) system should be established.
+rss0002:
+  title: "Documentation of All Exposed Systems"
+  anchor: documentation-of-all-exposed-systems
+  intro: |
+    Systems and services that are accessible from the internet should be fully inventoried and documented, as they represent potential attack vectors and must therefore be considered in the risk analysis.
+    A current and complete overview enables the targeted identification of vulnerabilities and the implementation of appropriate protective measures.
+    The documentation has to be reviewed and updated regularly to promptly account for new or changed exposures.
+rss0003:
+  title: "Preparation of Backup Protection"
+  anchor: preparation-of-backup-protection
+  intro: |
+    If an attack is suspected, existing backups must be protected immediately ([RS028](rp003.md#protecting-backups)).
+    Backups can be isolated by disconnecting the network connection or by shutting them down.
+    How backup protection is implemented in an emergency should be defined and documented in advance to ensure smooth execution of containment measures.
+rss0004:
+  title: "Developing a Recovery Process"
+  anchor: developing-a-recovery-process
+  intro: |
+    To ensure the smoothest possible recovery, a clear process should be defined in advance.
+    It must be taken into account that the recovery has to be functional while containment measures are in place.
+    The recovery process must be known to all parties involved and regularly tested and practiced.
+rss0005:
+  title: "Data Classification"
+  anchor: data-classification
+  intro: |
+    Organizations process data and information of various confidentiality levels, which are subject to different protection requirements.
+    Data should be clearly classified and labeled to ensure the protection of its confidentiality.
+  outro: |
+    A common approach is to distinguish between four levels of confidentiality.
+    These can be designated and differentiated as follows:
+
+    **Public:** Documents and information that may be made available to the public (e.g., promotional material, website, job advertisements).
+
+    **Restricted:** Documents and information, the knowledge of which by unauthorized persons could cause noticeable damage to the organization and its reputation as well as to affected individuals (e.g., offers, invoices, sales figures, contracts).
+
+    **Confidential:** Documents and information, the knowledge of which by unauthorized persons could cause significant damage to the organization and its reputation as well as to affected individuals (e.g., customer data, applications, detailed business analyses).
+
+    **Strictly confidential:** Documents and information, the knowledge of which by unauthorized persons could cause severe to existential damage to the organization and its reputation as well as to affected individuals (e.g., access data, information on criminal investigations, results of penetration and vulnerability tests).
+
+    Handling of data is directly linked to its classification.
+    In this context, permissible storage locations, regulations for sharing, as well as regulations for the retention and destruction of printed documents should be defined.
+    Regulations for data classification and their handling must be centrally documented and should be regularly communicated to all employees.
+    This can be done, for example, as part of regular training sessions for all employees ([RS010](rp000.md#training-of-employees)).
+rss0006:
+  title: "Network and System Usage Policy"
+  anchor: network-and-system-usage-policy
+  intro: |
+    The private use of the organization's network and employee-issued devices must be regulated by a policy.
+    Such a policy covers whether and in what form private internet and device use is permitted.
+    Private use comes with a significantly increased risk to IT security, therefore approval is not recommended.
+    Additionally, labor law and data protection aspects must be considered, so legal advice should be involved in drafting the policy.
+    In any case, the regulations must be clearly communicated to employees.
+rss0007:
+  title: "Password Policy"
+  anchor: password-policy
+  intro: |
+    The use of secure, random, and unrelated passwords is one of the fundamental measures to protect accounts and systems from unauthorized access.
+    To secure user accounts organization-wide, it is recommended to enforce a uniform and mandatory password policy and to set up multi-factor authentication (MFA).
+  controls: |
+    Recommended measures:
+
+    - Enforcement of a uniform and mandatory password policy
+    - Organization-wide use of MFA
+    - Management of passwords using a password manager
+    - Complete renewal of passwords at regular intervals
+  controls_extended: |
+    - Requirements for a **basic security level**:
+
+        - Minimum length of 14 characters
+        - Use of three different character types
+        - Use of memorable word combinations
+
+    - Requirements for a **high security level**:
+
+        - Minimum length of 25 characters
+        - Use of four different character types
+        - Use of randomly generated character strings
+rss0008:
+  title: "Offline Forensics"
+  anchor: offline-forensics
+  intro: |
+    If individual systems cannot be examined using remote forensics tools, for example due to existing isolation measures, these systems can be scanned with offline forensics tools.
+    Available options and specific measures for implementation must be coordinated with the supporting service provider.
+rss0009:
+  title: "Establishing Criteria for Incident Classification"
+  anchor: establishing-criteria-for-incident-classification
+  intro: |
+    The classification of the incident significantly determines the further course of action for incident handling.
+    To accelerate incident classification in the event of a suspected case, assessment criteria should be developed in advance.
+    The basis for assessing an incident is the knowledge of the organization's critical business processes and the systems and services associated with them ([RS000](rp000.md#risk-analysis)).
+  outro: |
+    If the security incident affects core processes of the organization or processes classified as critical and thereby significantly restricts regular operations, a major IT security incident (*Major Incident*) exists.
+    Additional possible criteria for incident assessment are the estimated effort for resolution as well as the estimated duration of restrictions and incident handling.
+    If duration and effort are to be used for assessment, it must be considered that, particularly at the beginning of an incident, there is often uncertainty about the situation, making such estimates difficult at times.
+    Based on these criteria, categories for assessing a security incident are defined.
+    According to %bsinotfallmanagement%, the categories disruption, emergency, crisis, and catastrophe can be distinguished.
+    However, at a minimum, the following categories should be distinguished as a basis for incident escalation:
+
+    **Disruption** (Minor Incident): An incident with minor impact on regular business operations; incident handling can be managed alongside day-to-day business (e.g., compromise by malware on a single system).
+
+    **Emergency** (Major Incident): Widespread system failures with severe impact on regular business operations due to the impairment of critical business processes up to and including complete operational shutdown (e.g., ransomware infection).
+    Incident handling is extensive and cannot be conducted alongside day-to-day business.
+rss0010:
+  title: "Establishing Criteria for Incident Escalation"
+  anchor: establishing-criteria-for-incident-escalation
+  intro: |
+    Based on the following questions, criteria for incident escalation should be established and documented:
+  outro: |
+    1. What are the critical (vital) business processes of the organization (see [RSS0001](rp000.md#identification-of-critical-systems-and-processes))?
+    2. What outages are tolerable?
+    3. The failure of which or how many critical business processes leads to business objectives not being achievable?
+
+    The criteria for escalating an incident and classifying it as an emergency or Major Incident are derived from the answers to question three.
+
+    %warning% **Attention:** A confirmed ransomware attack is **always** to be classified as a Major Incident.
+    For this type of attack, an IR service provider should be engaged immediately, as such an IT security incident is usually preceded by a complex attack scenario that requires extensive and interdependent measures, the relationships of which cannot be represented in a single Incident Response Playbook.
+rss0011:
+  title: "Identification of Relevant Systems for Emergency Operations"
+  anchor: identification-of-relevant-systems-for-emergency-operations
+  intro: |
+    %question% Which systems and services form the basis for vital business processes?<br><br>
+    The number of server and client systems is reduced to a minimum.
+    Access to central systems and services can, for example, already be ensured with one client system per department.
+rss0012:
+  title: "Emergency Operations Setup Planning"
+  anchor: emergency-operations-setup-planning
+  intro: |
+    The first step in setting up emergency operations is establishing a new network that has no connections to the compromised environment (red network), to the recovery environment, or to the internet.
+    Essential internet connections are explicitly permitted.
+    Subsequently, necessary server systems are prepared first, before the essential clients are set up.
+    A more detailed implementation plan results from existing dependencies between the required systems and services.
+rss0013:
+  title: "Reserving Required Storage and Network Capacity"
+  anchor: reserving-required-storage-and-network-capacity
+  intro: |
+    To remain capable of acting in the event of a severe IT security incident, sufficient storage and network capacity should be reserved for incident handling.
+    This includes, in particular, planning buffer capacity for forensic data backups, log exports, and the increased network traffic from recovery and analysis processes.
+    Freely available resources accelerate response times and reduce the risk of additional outages due to overload.
+rss0014:
+  title: "Operation of Backup Data Center"
+  anchor: operation-of-backup-data-center
+  intro: |
+    If there are particularly high requirements for availability and failover capability, the operation of a backup data center should be considered to continue running critical services or quickly restore them during a severe security incident.
+    Typically, this is only realistic and feasible for individual organizations such as operators of critical infrastructure, security-relevant authorities, and large enterprises with continuously business-critical processes where even brief outages would have significant impact.
+    A fully functional backup data center includes redundant hardware, geographically separated locations, and regularly tested switchover and restart procedures.
+rss0015:
+  title: "Procurement of Hypervisor"
+  anchor: procurement-of-hypervisor
+  intro: |
+    For the short-term setup or expansion of virtualized environments, appropriate hypervisor licenses and components are needed.
+    Procurement in advance can prevent delays in incident handling, for example due to delivery times or approval processes.
+    This enables faster provisioning of additional virtualization resources, for example for setting up emergency operations.
+rss0016:
+  title: "Maintaining Standby Clients"
+  anchor: maintaining-standby-clients
+  intro: |
+    To quickly establish basic working capability for emergency teams and the crisis management team during incident handling, some emergency clients should be kept on standby.
+    These should not be joined to the domain and should not be in use as regular work devices, but rather stored in a secure location and only issued in an emergency.
+    The emergency clients must be regularly checked for functionality and kept updated.
+rss0017:
+  title: "Scheduling Regular Status Meetings"
+  anchor: scheduling-regular-status-meetings
+  intro: |
+    During incident handling, the crisis management team should convene for regular status meetings.
+    Initially, a rhythm of two meetings per day is scheduled.
+    Later, the schedule should be shifted to one daily meeting as soon as possible to gain more productive time.
+    Typically, the meeting rhythm can be further relaxed after a few days.
+rss0018:
+  title: "Defining the Shift Model"
+  anchor: defining-the-shift-model
+  intro: |
+    Common shift models such as two-shift operations with eight hours each on five (16/5) or seven days (16/7) per week, or staffing three eight-hour shifts seven days per week (24/7), require significant personnel resources that often cannot be covered by available staff.
+    Therefore, pragmatic solutions for organizing shift work should be used during incident handling, especially at the beginning, to establish the necessary shift capability.
+  outro: |
+    In any case, sufficient break and rest periods must be provided for those involved to prevent staff attrition.
+    The required shift capability depends heavily on the extent of the incident.
+    The following questions support the determination of a shift model:
+
+    - What working hours need to be covered?
+    - Is it necessary to establish shift operations to cover these working hours?
+    - What personnel resources are available for shift operations?
+    - What working hours are reasonable and legally permissible?
+    - How can compensation for the resulting overtime be provided to employees (e.g., financial compensation or time off at a later date)?
+rss0019:
+  title: "Defining the Shift Handover Method"
+  anchor: defining-the-shift-handover-method
+  intro: |
+    If shift operations are necessary, the method of shift handover should be determined at the start and maintained for the duration of the shift operations.
+    There are two ways to conduct the shift handover.
+  outro: |
+    **Option 1 - Full Replacement:**
+    The different teams fully supersede each other.
+    For a full replacement, a shift handover must take place to ensure that the incoming team has all information about current developments and measures.
+    Such a shift handover should be kept as brief as possible to maintain the attention of those involved while minimizing work interruption.
+    Through this approach, all team members have the same level of information and can subsequently work largely without interruption.
+    However, information can be lost during the full replacement if it is not properly documented or addressed during the shift handover.
+
+    **Option 2 - Continuous Rotation:**
+    In continuous rotation, individual team members are continuously replaced.
+    This eliminates the need for a shift handover with participation of all team members and prevents complete interruption of work.
+    Furthermore, continuous rotation constantly brings new perspectives and impulses to the teams' work.
+    However, this option creates constant disruption, which is avoided with a centralized shift change.
+rss0020:
+  title: "Regular Security Training"
+  anchor: regular-security-training
+  intro: |
+    Security risks originating from system users can be reduced, in addition to restricting user permissions, through targeted training and the associated increase in awareness regarding security incidents, their potential triggers, and consequences.
+  outro: |
+    Security training should cover the following topics:
+
+    - Internal policy on data classification and handling
+    - Data protection
+    - Information security
+    - Organization's password policy
+    - Handling of credentials
+    - Awareness of social engineering and phishing attacks
+    - Reporting channels for suspected incidents
+
+    Awareness training on social engineering or phishing attacks can also be accompanied by simulated phishing campaigns, which repeatedly confront employees with the topic in their daily work outside of the training context and thus sensitize them to various manifestations.
+rss0021:
+  title: "Establishing Reporting Channels for Suspected Incidents"
+  anchor: establishing-reporting-channels-for-suspected-incidents
+  intro: |
+    To detect and investigate suspected cases early, observations and reports from users should be considered in addition to environmental monitoring.
+    For this purpose, appropriate reporting channels must be established and communicated organization-wide.
+rss0022:
+  title: "Training of Crisis Management Team Members"
+  anchor: training-of-crisis-management-team-members
+  intro: |
+    Handling a severe IT security incident represents an exceptional situation for all involved due to the significant potential for damage for the organization, the prevailing time pressure, and the limited ability to influence the course of events.
+    To meet this extraordinary burden, the members of the crisis management team should be prepared for their role through targeted training, for example in crisis management.
+rss0023:
+  title: "Exercise: Detecting and Reporting an Incident"
+  anchor: exercise-detecting-and-reporting-an-incident
+  intro: |
+    The objective of the exercise is to verify internal reporting channels for IT security incidents and to walk through the alerting of the IR service provider
+    The exercise scenario assumes that a suspicious system has been identified which needs to be verified to determine whether escalation of the incident is necessary.
+  outro: |
+    **Exercise Step 1: Initial verification of the affected system by 1st-level staff**
+    >%check% **Minimum expectation:** The correct conclusions are drawn (in case of uncertainty, a more sensitive response) and all facts are briefly documented.<br>
+    >%doublecheck% **Bonus:** A timeline of activities and events related to the incident is created.
+
+    **Exercise Step 2: Internal escalation according to the established reporting chain**
+    >%check% **Minimum expectation:** The correct contact person is reached in a reasonable time through the designated channel with the relevant information.<br>
+    >%doublecheck% **Bonus:** The escalation occurs within 30 minutes.
+
+    **Exercise Step 3: Notification to IR service provider**
+    >%check% **Minimum expectation:** The decision-making process for escalation is defined and it is known by whom and through which channel the escalation to the IR service provider takes place.<br>
+    >%doublecheck% **Bonus:** The IR hotline number is available without searching and all relevant information can be provided to the service provider in a structured manner.
+rss0024:
+  title: "Exercise: Taking Containment Measures"
+  anchor: exercise-taking-containment-measures
+  intro: |
+    The objective of the exercise is to establish clarity about (decision-making) authority and responsibilities regarding isolation measures and to familiarize participants with the options for isolating one or more systems.
+    For the exercise, it is assumed that the incident has already been detected, reported, and escalated.
+    A system is presumably compromised.
+    Furthermore, it cannot be ruled out that the attackers are still in the network; the exact situation is still unclear.
+    Therefore, measures to contain the incident must be taken.
+  outro: |
+    **Exercise Step 1: Authorized person makes decision on system isolation and subsequent isolation via SentinelOne and via the network**
+    >%check% **Minimum expectation:** The involved persons know who makes the decision on isolation and when, and the affected system is isolated through a prepared method (in the quarantine network or via EDR).<br>
+    >%doublecheck% **Bonus:** Exceptions for the IR service provider's tooling already exist and are functional.
+
+    **Exercise Step 2: Protection of the backup by disconnecting all connection options**
+    >%check% **Minimum expectation:** The shutdown or isolation of the backup is successful; the system can no longer be accessed.<br>
+    >%doublecheck% **Bonus:** The status of the backups is known.
+rss0025:
+  title: "Exercise: Technical Preparation for Detailed Analysis"
+  anchor: exercise-technical-preparation-for-detailed-analysis
+  intro: |
+    The objective of the exercise is to familiarize all participants with the modus operandi of collaboration with the IR service provider and to train them in using the deployed tools.
+    For the exercise, it is assumed that multiple systems have been compromised.
+    The required emergency measures have already been initiated and the IR service provider has been informed.
+    Now, technical measures need to be taken to enable the analysis.
+  outro: |
+    **Exercise Step 1: Receipt of the remote forensics tool provided by the IR service provider**
+    >%check% **Minimum expectation:** The required software gets from the IR service provider to the customer.<br>
+    >%doublecheck% **Bonus:** The provisioning and download of the software encounters no further problems (cloud folder access, AV interceptions, ...).
+
+    **Exercise Step 2: Rollout of the downloaded remote forensics tool via a scalable deployment method (e.g., GPO, software distribution, ...)**
+    >%check% **Minimum expectation:** The software rollout and connection to the IR service provider's backend are successful.<br>
+    >%doublecheck% **Bonus:** The software is rolled out quickly on many systems via a prepared method.
+
+    **Exercise Step 3: Receipt of the offline forensics tool provided by the IR service provider on a transfer system**
+    >%check% **Minimum expectation:** The required software gets from the IR service provider to the customer.<br>
+    >%doublecheck% **Bonus:** The provisioning and download of the software encounters no further problems (cloud folder access, AV interceptions, ...).
+
+    **Exercise Step 4: Transfer of the offline forensics tool to an isolated system and execution as administrator**
+    >%check% **Minimum expectation:** Transfer and execution of the tool do not cause any problems.<br>
+    >%doublecheck% **Bonus:** A prepared method for transfer exists.
+
+    **Exercise Step 5: Transfer of the collected log data back to the transfer system and transmission to the IR service provider**
+    >%check% **Minimum expectation:** Transfer of log data does not cause any problems and transmission is successful.<br>
+    >%doublecheck% **Bonus:** No further adjustments are needed for transmitting the log data.
+rss0026:
+  title: "Exercise: Emergency Operations"
+  anchor: exercise-emergency-operations
+  intro: |
+    The objective of the exercise is to identify the relevant core (IT) systems and their dependencies in preparation for emergency operations.
+    If emergency hardware is kept on hand for an incident, the use of this hardware should also be practiced.
+    For the exercise, it is assumed that the regular infrastructure is not operational due to an IT security incident.
+    Hardware normally used for administration can or may no longer be used.
+    Critical core systems are to be temporarily made available again to maintain the organization's ability to work.
+  outro: |
+    **Exercise Step 1: Ensuring out-of-band internet access (e.g., via 5G router, mobile hotspots, ...)**
+    >%check% **Minimum expectation:** "Neutral" devices can communicate via the out-of-band channel to the internet.<br>
+    >%doublecheck% **Bonus:** The available bandwidth is sufficient to transfer larger amounts of data in a short time.
+
+    **Exercise Step 2: Commissioning of emergency administration hardware**
+    >%check% **Minimum expectation:** The hardware can be used for administration purposes within one hour, and relevant tools and credentials are available.<br>
+    >%doublecheck% **Bonus:** No installation/update effort is required.
+
+    **Exercise Step 3: Performing emergency administration tasks using hardware from Step 2**
+    >%check% **Minimum expectation:** Accessing the backup system disconnected for isolation and the network hardware is possible.<br>
+    >%doublecheck% **Bonus:** Relevant tasks can be completed within one hour.
+
+    **Exercise Step 4 (optional): Fresh installation or restoration of core infrastructure systems (e.g., hypervisor) on emergency hardware**
+    >%check% **Minimum expectation:** The provisioning of systems on emergency hardware is successful and the capabilities and limitations of available hardware are known.<br>
+    >%doublecheck% **Bonus:** Relevant systems are available within one day.
+rss0027:
+  title: "Exercise: Recovery"
+  anchor: exercise-recovery
+  intro: |
+    The objective of the exercise is for participants to gain experience with the necessary recovery processes.
+    It is assumed that the security incident has already been successfully contained and that systems and data now need to be restored in a new environment.
+  outro: |
+    **Exercise Step 1: Restoration of user data from a system**
+    >%check% **Minimum expectation:** The restoration in the "new infrastructure" is successful.<br>
+    >%doublecheck% **Bonus:** User data can be used by the new application without further effort.
+
+    **Exercise Step 2: Restoration of a single system**
+    >%check% **Minimum expectation:** The restoration in the "new infrastructure" is successful.<br>
+    >%doublecheck% **Bonus:** The restoration succeeds within the set time frame.
+
+    **Exercise Step 3: Restoration of multiple related systems**
+    >%check% **Minimum expectation:** The restoration in the "new infrastructure" is successful and communication between related systems works.<br>
+    >%doublecheck% **Bonus:** The restoration succeeds within the set time frame.
+rss0028:
+  title: "Initiating Containment Measures"
+  anchor: initiating-containment-measures
+  intro: |
+    Immediate measures must be taken to protect the infrastructure.
+    As long as the situation is unclear and no information about the extent and nature of the compromise is available, the following initial measures are initiated:
+  outro: |
+    - Isolation of affected systems ([RS025](rp003.md#isolation-of-affected-systems))
+    - Network Isolation ([RS026](rp003.md#network-isolation))
+    - Disconnection from other sites ([RS027](rp003.md#isolation-of-other-locations))
+    - Protection of the backup ([RS028](rp003.md#protecting-backups))
+rss0029:
+  title: "Notification of Organizational Leadership"
+  anchor: notification-of-organizational-leadership
+  intro: |
+    The confirmed incident is reported internally according to existing alerting chains.
+    A severe IT security incident ([RS018](rp002.md#classification-as-major-incident)) is usually preceded by a complex attack scenario that requires extensive and interdependent measures and has far-reaching effects on the entire organization.
+    The organizational leadership must be informed about the incident.
+rss0030:
+  title: "Engaging an IR Service Provider"
+  anchor: engaging-an-ir-service-provider
+  intro: |
+    A qualified Incident Response service provider should be engaged to investigate and manage the incident.
+    If a service contract exists ([RS008](rp000.md#ir-service-agreement)), the respective service provider is alerted according to the agreed-upon process.
+    If this is not the case, an attempt can be made to obtain ad-hoc support from a service provider.
+    Potentially suitable service providers and their contact details can be found via the %bsiaptliste% or the %bsivorfallbearbeitung% of the BSI.
+    The engagement of a service provider is carried out by the crisis management team ([RS042](rp005.md#external-support)).
+rss0031:
+  title: "Initiating Initial Ransomware Response Measures"
+  anchor: initiating-initial-ransomware-response-measures
+  intro: |
+    If a ransomware compromise exists or is merely suspected, the following steps should be initiated immediately:
+  outro: |
+    - Network Isolation ([RS026](rp003.md#network-isolation))
+    - Isolation of Other Locations ([RS027](rp003.md#isolation-of-other-locations))
+    - Protecting Backups ([RS028](rp003.md#protecting-backups))
+    - Classification as Major Incident ([RS018](rp002.md#classification-as-major-incident))
+    - Escalation of the Incident ([RS019](rp002.md#escalation-of-the-incident))
+
+    Encryption may still be in progress on some systems.
+    If this is the case, the encryption can potentially be interrupted by shutting down the affected systems.
+rss0032:
+  title: "Seize the Ransom Note"
+  anchor: seize-the-ransom-note
+  intro: |
+    Attackers typically leave a file (e.g., Restore-My-Files.txt) describing that all data has been encrypted and how it can be decrypted upon payment of a ransom.
+    This so-called ransom note should be saved for further investigation.
+rss0033:
+  title: "Preparation of Remote Forensics"
+  anchor: preparation-of-remote-forensics
+  intro: |
+    Forensic examination of compromised systems by a service provider often takes place remotely.
+    This typically requires installing appropriate software on the affected systems.
+    If multiple systems are affected, the installation should ideally be managed through a central solution (e.g., software distribution or GPO).
+    The specific measures required in preparation for remote forensics must be coordinated with the supporting service provider.
+rss0034:
+  title: "Preparation of M365 Log Export"
+  anchor: preparation-of-m365-log-export
+  intro: |
+    For the investigation of a compromised Microsoft 365 tenant, certain logs are exported.
+    It must be coordinated with the supporting IR service provider how access to the tenant can be granted and what preparations are necessary for the log export.
+rss0035:
+  title: "Documentation of Internet-Facing Services"
+  anchor: documentation-of-internet-facing-services
+  intro: |
+    It should be documented which services and applications allow external access to the infrastructure and what their status (enabled/disabled) is.
+rss0036:
+  title: "Invalidation of Trusts"
+  anchor: invalidation-of-trusts
+  intro: |
+    Existing trusts, for example to other domains or cloud services, should be revoked.
+rss0041:
+  title: "Appointment of a Crisis Management Team Lead"
+  anchor: appointment-of-a-crisis-management-team-lead
+  intro: |
+    The lead of the crisis management team is assumed by the internal project management.
+    This does not necessarily have to be a member of the organizational leadership.
+rss0042:
+  title: "Basic Composition of the Crisis Management Team"
+  anchor: basic-composition-of-the-crisis-management-team
+  intro: |
+    The crisis management team consists of the crisis management team leader and a core team.
+    The crisis management team can be expanded at any time as needed.
+    The positions listed below may need to be adapted to the organization.
+    Each role should be staffed with one person and a deputy should be designated and informed.
+  outro: |
+    - **Core Team Crisis Management:**
+
+        - IT
+        - Finance
+        - Human Resources
+        - Legal
+        - Communications
+        - Data Protection
+        - CISO / ISO / ISB
+        - Facility Management
+
+    - **Possible Extension:**
+
+        - Department heads of affected business areas
+        - Process management
+        - Subject matter experts
+        - Works council (as observer)
+rss0043:
+  title: "Staffing of Supporting Roles"
+  anchor: staffing-of-supporting-roles
+  intro: |
+    Supporting roles take over organizational tasks in the crisis management team to take load off decision makers.
+    These tasks include creating and updating the situational overview, documenting sessions, general documentation, and logistical support through provisions and equipment for the crisis management team.
+rss0044:
+  title: "Developing Courses of Action"
+  anchor: developing-courses-of-action
+  intro: |
+    First, several different courses of action should be developed.
+    This is done in a pure assembly of options without evaluation or premature decision-making.
+rss0045:
+  title: "Evaluating Courses of Action"
+  anchor: evaluating-courses-of-action
+  intro: |
+    The proposed courses of action are evaluated one by one, and the advantages and disadvantages of each individual option are documented as a basis for the subsequent decision.
+  outro: |
+    %question% Questions to examine:
+
+    - What is the objective?
+    - Does the course of action appear suitable to achieve the objective?
+    - What are the chances of success?
+    - What advantages does the option offer?
+    - What risks does the option entail?
+rss0046:
+  title: "Weighing Options and Decision-Making"
+  anchor: weighing-options-and-decision-making
+  intro: |
+    All courses of action have their own advantages and disadvantages, so there is likely not a *right* decision or ideal solution.
+    In case of doubt, an attempt should be made to minimize risks.
+    What is important is **that** a decision is made and that it can be well justified.
+    In addition to the decision itself, the reasoning behind it should be documented.
+rss0047:
+  title: "Deriving Measures"
+  anchor: deriving-measures
+  intro: |
+    To implement the chosen course of action, specific measures must be derived from it.
+rss0048:
+  title: "Commissioning Measure Implementation"
+  anchor: commissioning-measure-implementation
+  intro: |
+    Approved measures should be broken down into individual tasks and forwarded to the implementers.
+    For this purpose, particular tasks are formulated.
+    For the implementation of each task, a specific person is assigned, a timeframe is set and both are documented.
+    Finally, the tasks are forwarded to the responsible persons.
+rss0049:
+  title: "Verification of Effectiveness"
+  anchor: verification-of-effectiveness
+  intro: |
+    The implementation of measures should be monitored.
+    Additionally, it must be verified whether the implementation achieved the desired result.
+    If that is not the case, corrective action must be taken.
+    The implementation of the measure and its measurable effects should also be documented.
+    If new action is needed as a result of the implementation, the cycle of developing and evaluating courses of actions is rerun ([RS038](#development-of-courses-of-action-and-determination-of-measures)).
+rss0050:
+  title: "Review of Reporting Obligations and Deadlines"
+  anchor: review-of-reporting-obligations-and-deadlines
+  intro: |
+    Regardless of industry-specific reporting obligations, an IT security incident frequently constitutes a notifiable data protection incident under the GDPR.
+    The initial notification of an incident to the responsible authority is subject to a 72-hour deadline from the time the incident becomes known.
+    Even if a complete statement about the extent of the incident and its consequences (e.g., data exfiltration) cannot be made, a report should already be submitted to meet the deadline.
+    If further findings emerge during the analysis, these can be reported subsequently.
+  outro: |
+    In addition to the data protection notification, industry-specific reporting obligations or contractually regulated reporting obligations to customers, business partners, or insurers may also apply; this must be verified.
+    The following additional reporting obligations may apply, for example:
+rss0051:
+  title: "Review of Reporting Forms"
+  anchor: review-of-reporting-forms
+  intro: |
+    For many notifications, reporting forms or online portals are provided.
+    Various reporting offices can be reached via the %bsimeldeportal%.
+rss0052:
+  title: "Filing a Criminal Complaint"
+  anchor: filing-a-criminal-complaint
+  intro: |
+    The goal of police work in connection with a complaint is criminal prosecution.
+    The police will not assist with the actual incident handling and return to regular business operations.
+    The investigation of severe IT security incidents typically does **not** fall within the jurisdiction of the local police department.
+    For the prosecution of crimes in the cybercrime domain, the state police forces each have a *Central Contact Point for Cybercrime* (ZAC).
+    If the decision is made to file a criminal complaint, it should be filed immediately through the responsible %zacshort%.
+rss0053:
+  title: "Reporting the Incident to the Insurer"
+  anchor: reporting-the-incident-to-the-insurer
+  intro: |
+    It must be verified whether reporting obligations to the insurer exist and what deadlines are associated with them.
+    Even if a complete statement about the extent of the incident cannot be made, a report should already be submitted to meet applicable deadlines.
+    If further findings emerge during the analysis, these can be reported subsequently.
+    A contact person and their availability should also be provided to the insurer for follow-up questions.
+  outro: |
+    The following information is relevant for the insurer:
+
+    - Type of incident
+    - Time of discovery
+    - Affected systems/data
+    - Measures taken
+    - Potential third-party damages
+rss0054:
+  title: "Review of Damage Coverage Amount and Deductible"
+  anchor: review-of-damage-coverage-amount-and-deductible
+  intro: |
+    It must be verified what types of costs related to an IT security incident are covered by the insurer and up to what amount coverage is provided.
+    Even if parts of the financial damage caused by the incident are covered by the insurer, a portion of the damage must be borne by the organization itself (deductible).
+    The amount of the deductible must also be verified.
+rss0055:
+  title: "Review of Additional Insurance Requirements"
+  anchor: review-of-additional-insurance-requirements
+  intro: |
+    Some insurers impose conditions for incident handling.
+    For example, it may be contractually stipulated that an IR service provider chosen by the insurer must be used.
+    Therefore, it should be verified whether such requirements exist on the part of the insurer.
+rss0056:
+  title: "Review of Ransom Payment Options"
+  anchor: review-of-ransom-payment-options
+  intro: |
+    Before a decision can be made about a potential ransom payment, it must be verified whether the financial means for a payment are available.
+    It should be taken into account that even in the case of a payment, significant efforts and costs for the cleanup and restoration of the environment will still be incurred.
+rss0057:
+  title: "Review of Legal Implications of a Ransom Payment"
+  anchor: review-of-legal-implications-of-a-ransom-payment
+  intro: |
+    A ransom payment can have criminal law consequences.
+    Therefore, the legal implications of a ransom payment must be reviewed.
+    It is recommended to seek legal advice from a suitably specialized law firm.
+rss0058:
+  title: "Decision on Negotiations over Ransom"
+  anchor: decision-on-negotiations-over-ransom
+  intro: |
+    The decision to enter ransom negotiations is not the same as the decision to make a ransom payment.
+    Ransom negotiations can, for example, also be used to buy time to coordinate and implement other measures.
+    Therefore, the decision to enter negotiations is initially made independently of a ransom payment.
+    If the crisis management team decides to enter negotiations, the further procedure follows according to [RP011](../../pages/response_phases/rp011.md).
+rss0059:
+  title: "Review of Available Personnel Resources"
+  anchor: review-of-available-personnel-resources
+  intro: |
+    During a severe IT security incident, significantly more work arises in some areas while other areas are unable to operate.
+    It must be reviewed which personnel resources are available at short notice or can be activated.
+    Under certain circumstances, employees from areas that are non-operational due to existing technical restrictions can temporarily support in other areas.
+rss0060:
+  title: "Review of Available Skills"
+  anchor: review-of-available-skills
+  intro: |
+    In addition to personnel availability, it must be assessed whether the available staff possess the necessary knowledge and skills for incident handling.
+    A severe IT security incident is a crisis situation that demands a high degree of organizational skills, technical knowledge, and decision-making ability.
+    Therefore, it should be assessed whether experience in crisis management exists and which response phases and steps can be covered by the available personnel.
+rss0061:
+  title: "Review of the Need for Professional Support"
+  anchor: review-of-the-need-for-professional-support
+  intro: |
+    In the event of a major IT security incident, an IR service provider should always be engaged, as the incident is usually preceded by a complex attack scenario that requires extensive and interdependent measures, the relationships of which cannot be represented in a single Incident Response Playbook.
+  outro: |
+    If an IR service contract exists, the service provider should have already been alerted during incident escalation ([RS019](rp002.md#escalation-of-the-incident)).
+    If no IR service contract exists, an attempt can be made to obtain ad-hoc support from a service provider.
+    Potentially suitable service providers and their contact details can be found via the %bsiaptliste% of the BSI.
+    It should be reviewed whether additional support is needed.
+    In particular, the following roles can provide valuable support in handling a major security incident:
+
+    - Crisis manager
+    - Crisis communicator
+    - Legal counsel
+    - Ransom negotiation expert
+rss0062:
+  title: "Engaging Service Providers"
+  anchor: engaging-service-providers
+  intro: |
+    Before engaging any service provider, expectations regarding the respective service provider and the collaboration should be defined internally.
+    The extent to which expectations can be met is then coordinated with the respective service provider.
+rss0063:
+  title: "Appointment of a Central Internal Contact Person"
+  anchor: appointment-of-a-central-internal-contact-person
+  intro: |
+    To ensure smooth collaboration with external service providers, one person should serve as the central contact.
+    If multiple service providers are involved, this person acts as the interface and coordinates the collaboration.
+    Additionally, a deputy should be designated to ensure continuity.
+    The contact details of the contact person and deputy must be communicated to the service providers.
+rss0064:
+  title: "Communicating Regulations to Participants"
+  anchor: communicating-regulations-to-participants
+  intro: |
+    The agreed-upon regulations for implementing shift work must be communicated to all involved employees.
+    These are primarily the members of the crisis management team and the emergency teams.
+    In addition to the regulations on the shift model and shift handover, it should also be communicated that compensation will be provided and, if already known, how it will be structured, in order to accommodate employees and thus create motivating incentives for participation.
+rss0065:
+  title: "Organizing Regular Communication with Emergency Teams"
+  anchor: organizing-regular-communication-with-emergency-teams
+  intro: |
+    To be able to assess the situation in a well-founded manner during regular status meetings, regular information exchange between the crisis management team and the emergency teams must be ensured.
+    One option is to update information through a brief status report from a representative of each emergency team at the beginning of each meeting.
+    This approach can lead to delays in the meeting schedule.
+    Alternatively, a central collection point for all information can be created through the supporting role of *Situational Overview*.
+    The task of this role is to continuously query the current status from the emergency teams, prepare it for the crisis management team, and summarize it for all attendees during the situation assessment ([RS036](rp008.md#assessment-of-the-situation)) at the beginning of the meeting.
+rss0066:
+  title: "Selecting Suitable Premises"
+  anchor: selecting-suitable-premises
+  intro: |
+    In general, meeting or conference rooms are suitable as they provide ample space and are typically already equipped with visualization aids.
+  outro: |
+    To optimize working conditions for the crisis management team members and ensure the reliability of the war room, the room should ideally have the following characteristics:
+
+    - No visibility from outside
+    - Proximity to sanitary facilities
+    - Accessibility at all times of day and night
+    - Location outside possible evacuation areas
+    - Sun protection
+    - Temperature regulation capability (air conditioning, heating)
+
+    When selecting the room, it should also be considered that additional rooms for break and rest areas are available nearby.
+rss0067:
+  title: "Equipping the War Room"
+  anchor: equipping-the-war-room
+  intro: |
+    The further equipping of the war room is carried out by providing the required work materials ([RS047](#provision-of-work-equipment)) and in the course of ensuring provisions for the crisis management team members ([RS052](#ensuring-the-provision-of-supplies-to-crisis-management-team-members)).
+rss0068:
+  title: "Provision of Office and Meeting Supplies"
+  anchor: provision-of-office-and-meeting-supplies
+  intro: |
+    To establish basic working capability, simple office and meeting materials are needed.
+    Most of these should already be available within the organization and merely need to be bundled and made available in the war room.
+  outro: |
+    The following work materials must be procured for the work of the crisis management team and the emergency teams:
+
+    - Writing paper and pens
+    - Binders, staplers, hole punchers, sticky notes
+    - Physical visualization aids (flipchart, whiteboard, markers)
+    - Physical copies of the crisis plan
+rss0069:
+  title: "Provision of Technical Work Equipment"
+  anchor: provision-of-technical-work-equipment
+  intro: |
+    %warning% **Attention:** Systems that are part of the compromised infrastructure are also considered compromised and must therefore no longer be used!<br>
+    Instead, replacement devices must be procured.
+    If emergency hardware is available and ready for use, it should be used.
+    New procurement is cost-intensive and potentially time-consuming.
+    If new procurement is not feasible for the stated reasons and no emergency hardware is available, private devices can initially be used until existing clients have been reinstalled ([RS107](rp013.md#reinstallation-of-clients)).
+  outro: |
+    The following work equipment must be procured for the work of the crisis management team and the emergency teams:
+
+    - Notebooks
+    - Printer (including printer paper and toner)
+    - Projector
+    - (Mobile) phones
+    - Networking hardware
+    - Technical accessories (e.g., power strips, power supplies, etc.)
+rss0070:
+  title: "Setting Up a Linux Client for Data Transfer"
+  anchor: setting-up-a-linux-client-for-data-transfer
+  intro: |
+    For transferring suspicious files, it may be advisable to use a Linux system.
+    This ensures that no AD-joined computer is infected during the file transfer.
+    For this purpose, either a dedicated client with a full Linux operating system can be preinstalled or a live system based on Linux can be used.
+rss0071:
+  title: "Platforms for Data Exchange"
+  anchor: platforms-for-data-exchange
+  intro: |
+    During incident handling, administrative data (e.g., priority lists, contact lists) and forensic data (e.g., scan results, triage packages) are generated.
+    The exchange of administrative data typically involves various groups of people, while forensic data only needs to be exchanged between the forensics or IR service provider and the emergency teams with technical tasks.
+    Additionally, forensic data can take up large volumes, so it is recommended to use different channels for exchanging administrative and forensic data.
+rss0072:
+  title: "Food and Beverage Supply"
+  anchor: food-and-beverage-supply
+  intro: |
+    Food and beverages must be provided for the crisis management team and emergency teams.
+    Food orders are coordinated centrally.
+    Providers should be chosen that cater to as many tastes as possible, so that all employees who need to be supplied can be served according to their preferences and (in)tolerances.
+    If food is ordered repeatedly, variety should be ensured.
+    In addition to main meals, small snacks such as fruit and candy can boost motivation and productivity.
+    Sufficient beverages (water, coffee, caffeinated cold drinks) should also be provided.
+rss0073:
+  title: "Setting Up Break and Rest Areas"
+  anchor: setting-up-break-and-rest-areas
+  intro: |
+    Work and break areas should be physically separated.
+    Through separation, concentrated work is less disturbed and breaks can be used more effectively for rest.
+    Break and rest areas should be located near the war room and sanitary facilities and be accessible at all times.
+    Food and beverages are provided in the break room; additionally, a rest area can be created where there is the opportunity to lie down for a short time.
+rss0074:
+  title: "Prioritizing Business Processes"
+  anchor: prioritizing-business-processes
+  intro: |
+    %question% Which business processes are vital for survival?<br><br>
+    Emergency operations only include business processes that the organization absolutely needs to survive.
+    All other business processes must subordinate to this premise and are not considered in emergency operations.
+rss0075:
+  title: "Documentation of Priorities and Dependencies"
+  anchor: documentation-of-priorities-and-dependencies
+  intro: |
+    All preceding planning steps for setting up emergency operations are documented, in particular existing dependencies as well as the prioritization of business processes and systems.
+rss0076:
+  title: "Review of Meeting Rhythm"
+  anchor: review-of-meeting-rhythm
+  intro: |
+    Typically, the meeting frequency can be reduced after one to two weeks.
+    While two daily status meetings are still useful at the beginning, one daily status meeting usually suffices later.
+    By reducing meetings, additional time for implementing decided measures can be gained.
+    Therefore, it should be reviewed whether the meeting rhythm is appropriate for the current situation and adjusted if necessary.
+rss0077:
+  title: "Review of the Shift Model"
+  anchor: review-of-the-shift-model
+  intro: |
+    Since shift operations represent burden on those involved, they should only be maintained as long as necessary.
+    It should be reviewed whether a return from temporary shift operations to regular working hours is possible.
+    Different arrangements for different organizational areas may be appropriate.
+rss0078:
+  title: "Defining a Communication Strategy"
+  anchor: defining-a-communication-strategy
+  intro: |
+    Whether communication should be more offensive or defensive depends on the situation.
+    If the incident and its effects are visible externally, an offensive communication strategy is unavoidable.
+    If this is not the case or low public attention is expected anyway, a defensive approach can be pursued.
+    In any case, the communicated content should correspond to the truth, as untruths that are uncovered at a later point can significantly damage the credibility and trust in the organization.
+  outro: |
+    **Strategy 1 - Offensive Communication:**
+    Causes and effects of the incident are openly addressed.
+    Through the active approach, the information needs of the press and public are typically met.
+    The risk of erroneous or entirely false reporting through third parties can be reduced this way.
+
+    **Strategy 2 - Defensive Communication:**
+    Through a restrained information policy, general reporting on the incident can be reduced.
+    This may also avoid negative reporting in connection with the organization.
+    This approach can have negative effects if media sense greater interest and resort to alternative sources for comprehensive reporting.
+rss0079:
+  title: "Establishing Communication Guidelines"
+  anchor: establishing-communication-guidelines
+  intro: |
+    Rather than imposing blanket speaking prohibitions, employees should be sensitized with clear communication guidelines to minimize and channel their communication with external parties.
+    For this purpose, the guidelines can be compiled as a simple factsheet.
+    Additionally, example formulations can be appended to the general guidelines.
+    The communication guidelines also serve as guardrails for the centrally managed communication with external target groups ([RP010](rp010.md)).
+  outro: |
+    The following principles should be part of the communication guidelines:
+
+    - Incident-related external communication is managed centrally
+    - For inquiries from external parties, refer to the central contact point / information platform using neutral formulations
+    - Use internal channels to forward inquiries
+    - Maintain discretion towards external parties
+    - No personal statements, neither written nor verbal, to external parties (do not communicate speculations, assessments, or technical details externally)
+    - No personal social media posts
+    - No assignments of blame towards the public, in conversations with customers, or with partners
+    - No sharing of confidential information with external parties (internal emails, chats, screenshots, or documents)
+rss0080:
+  title: "Content Alignment of Internal/External Communication"
+  anchor: content-alignment-of-internalexternal-communication
+  intro: |
+    Even when communication guidelines are established and communicated to employees, it can hardly be prevented that content communicated internally reaches external parties.
+    To avoid disclosing confidential information or making contradictory statements, the same information should be communicated both internally and externally.
+    If this principle is not followed, it can have negative effects on the credibility of the organization and the trust placed in it.
+rss0081:
+  title: "Timing Alignment of Internal/External Communication"
+  anchor: timing-alignment-of-internalexternal-communication
+  intro: |
+    Content that is communicated both internally and externally should wherever possible be transmitted to internal target groups first.
+    If this is not possible, internal stakeholders should at least be informed simultaneously with external groups.
+    In any case, it should be avoided that employees or other internal target groups receive the respective information solely through external channels, as this can create the impression that external groups are given higher priority in communication.
+rss0082:
+  title: "Identification of Suitable Channels per Target Group"
+  anchor: identification-of-suitable-channels-per-target-group
+  intro: |
+    Different target groups are reached best through different channels, so the choice of suitable communication channels must be made individually for each target group.
+    An important criterion for choosing suitable communication channels is the ease of accessibility for the respective target group.
+    To ensure that all relevant target groups are reached, already established communication channels should be used for crisis communication whenever possible.
+    These can include, for example, intranet, website, or social media channels.
+rss0083:
+  title: "Review of Technical Capabilities"
+  anchor: review-of-technical-capabilities
+  intro: |
+    As a result of an IT security incident, already established communication channels may be only partially available or not available at all.
+    Therefore, the currently available technical capabilities must be reviewed and, if necessary, alternative communication channels must be set up.
+rss0084:
+  title: "Question based Summary of Information"
+  anchor: question-based-summary-of-information
+  intro: |
+    By answering simple wh-questions, the current state of knowledge can be conveyed briefly and understandably.
+    With the first notification, the following questions should initially be answered:
+  outro: |
+    - What happened?
+    - When did the incident occur?
+    - What restrictions exist due to the incident?
+    - Which organizational areas are affected by the restrictions?
+rss0085:
+  title: "Process Communication"
+  anchor: process-communication
+  intro: |
+    In addition to informing about the restrictions, it should also be communicated that work is in progress to return to normal operation.
+    As part of process communication, an overview of current measures, progress, objectives, and time perspectives can be provided.
+rss0086:
+  title: "Internal Announcement of Communication Guidelines"
+  anchor: internal-announcement-of-communication-guidelines
+  intro: |
+    To sensitize employees regarding communication about the incident and to minimize employee communication with external parties to the extent possible, the communication guidelines established in [RS063](#definition-of-communication-basics) should be made known organization-wide.
+rss0087:
+  title: "Setting Up a Dialogue Channel"
+  anchor: setting-up-a-dialogue-channel
+  intro: |
+    To give employees the opportunity to ask questions about the incident and its recovery steps, a central contact point for internal inquiries should be created.
+    Through this dialogue, the mood within the organization can be better assessed and responded to if necessary.
+    Additionally, employees receive the feeling of being heard and being an important part of the organization through an appropriate response to their contributions.
+rss0088:
+  title: "Setting Up a Contact Point for Active Information Retrieval"
+  anchor: setting-up-a-contact-point-for-active-information-retrieval
+  intro: |
+    By providing all information through a central platform that enables employees to actively retrieve information as needed, the volume of inquiries can be reduced.
+rss0089:
+  title: "Summarizing the Current State of Knowledge"
+  anchor: summarizing-the-current-state-of-knowledge
+  intro: |
+    The current state of knowledge should be summarized as ly and understandably as possible.
+    It is essential to ensure that no information is communicated externally that has not also been made known internally.
+    The content of the announcement is approved by the crisis management team.
+rss0090:
+  title: "Expression of Sincere Regret and Empathy"
+  anchor: expression-of-sincere-regret-and-empathy
+  intro: |
+    In addition to providing objective and clear information about the situation, the target groups and their interests must also be addressed.
+    Particularly at the beginning of the incident, little information is typically available, leaving those, who may themselves be affected by the incident, feeling uncertain.
+    Therefore, the incident notification should also express empathy and understanding for the concerns of those addressed and indicate that these will be taken into account in incident handling communications.
+rss0091:
+  title: "Website Adaptation"
+  anchor: website-adaptation
+  intro: |
+    An existing website can be converted into a darksite in a crisis situation and thus used as a platform for fast and direct communication with the general public.
+    If a prepared darksite exists for crisis situations, it is adapted to the incident and activated upon decision by the crisis management team.
+    The darksite should be designed to load quickly and be optimized for mobile devices.
+    Furthermore, it must be clearly structured and easy to navigate.
+  outro: |
+    The following content should be part of the darksite:
+
+    - Current information about the situation
+    - FAQ
+    - Contact information of the contact point
+    - Links to additional information sources (e.g., organization's social media channels)
+    - Legal notice / data protection information
+rss0092:
+  title: "Adaptation of Social Media Presence"
+  anchor: adaptation-of-social-media-presence
+  intro: |
+    Existing social media presence can also be used for communication about the incident.
+    Informative posts about the incident are prepared and published after approval.
+    To make the information easy to find, planned posts of regular communication should be suspended until further notice.
+    In addition to current information about the situation, references to the website and the central contact point for the incident should be provided.
+rss0093:
+  title: "Monitoring of Social Media Platforms"
+  anchor: monitoring-of-social-media-platforms
+  intro: |
+    When using social media platforms, the built-in functionalities can be used to check communication range.
+    Furthermore, reactions such as user comments on the published posts should be continuously monitored to incorporate the questions and feedback into further communication.
+rss0094:
+  title: "Monitoring of Press Coverage"
+  anchor: monitoring-of-press-coverage
+  intro: |
+    To be able to respond promptly to third-party reporting on the incident, online reports in particular should be continuously monitored.
+    If monitoring of reporting about the organization does not already exist, it must be set up on short notice.
+    For this purpose, search engine alerts with appropriate keywords such as the organization's name can be created.
+rss0095:
+  title: "Setting Up a Contact Point for External Target Groups"
+  anchor: setting-up-a-contact-point-for-external-target-groups
+  intro: |
+    To give external stakeholders the opportunity to ask questions about the incident, its impact, and its handling, a single point of contact should be established.
+    Customers or business partners in particular may be affected by the incident and its consequences, resulting in increased interest and information needs.
+  outro: |
+    The establishment of a central contact point, for example in the form of a hotline, enables direct communication, allowing content to be actively managed and thus reducing the spread of speculations and rumors.
+    Through direct dialogue with external target groups, the external perception of the organization regarding incident handling can also be better assessed and addressed if necessary.
+rss0096:
+  title: "Publishing FAQ"
+  anchor: publishing-faq
+  intro: |
+    Publishing a list of questions and answers to reply to frequently asked questions enables external target groups to independently inform themselves about the incident and thereby helps relieve the central contact point.
+    Different topics will be relevant for different target groups, so in addition to general questions, target group-specific questions should be included.
+    Depending on the situation and target group-specific interest, additional questions should be added over the course of events.
+  outro: |
+    The following general questions can be addressed in a FAQ:
+
+    - What happened?
+    - What has been done to resolve the incident?
+    - Which systems are affected by the outage?
+    - How long will the outages last?
+    - How can the organization currently be reached? Where is new information being provided?
+rss0097:
+  title: "Publishing Regular Status Updates"
+  anchor: publishing-regular-status-updates
+  intro: |
+    Through regular updates, the flow of information is maintained.
+    An update can also consist of stating that there is no update.
+    Updates should be made at a fixed rhythm.
+    Additionally, each update can inform about when the next update will be provided.
+    If this is done, the announced time should absolutely be adhered to, otherwise a loss of trust in the organization can occur.
+rss0098:
+  title: "Responding to External Inquiries"
+  anchor: responding-to-external-inquiries
+  intro: |
+    External inquiries, for example from the press or customers, should be answered.
+    Where content-wise meaningful and possible, reference should be made to already provided information.
+    Inquiries that cannot be answered in this way must be individually reviewed to determine whether the requested information is available and/or may be published.
+rss0099:
+  title: "Responding to Press Coverage"
+  anchor: responding-to-press-coverage
+  intro: |
+    If third parties report on the incident, it can lead to a false representation of the situation or speculation regarding causes and course of the incident.
+    If this is the case, an appropriate response must be made.
+    The communication principles established for the incident should be maintained.
+    Furthermore, no untrue statements should be made.
+    Corrections, counter-statements, and any other responses to third-party reporting are prepared by the communications team and should be approved by the crisis management team.
+rss0100:
+  title: "Defining the Negotiation Objective"
+  anchor: defining-the-negotiation-objective
+  intro: |
+    When setting objectives, considerations regarding the financial situation, the overall impact on the organization, and legal issues must be taken into account.
+  outro: |
+    By establishing clear objectives and involving the relevant stakeholders, the negotiation process can be approached with a targeted strategy.
+    This increases the probability of achieving the desired results.
+    Objectives of the negotiations can be:
+
+    - Ransom payment and data decryption
+    - Buying time
+    - Preventing the disclosure of data
+
+    Paying the demanded ransom and decrypting the data does not eliminate the need for a detailed analysis of the incident.
+rss0101:
+  title: "Preparing for Negotiation Scenarios"
+  anchor: preparing-for-negotiation-scenarios
+  intro: |
+    Preparing for different negotiation scenarios is essential to remain flexible and capable of action.
+    This includes analyzing potential reactions from the attacker – from cooperative communication to aggressive threats or time pressure.
+  outro: |
+    For each scenario, clear courses of action should be defined, including escalation paths and decision criteria.
+    Important aspects include setting minimum and maximum positions, assessing the risks of payment versus non-payment, and considering legal and regulatory requirements.
+
+    The following possible scenarios should be considered:
+
+    - The attackers are willing to compromise regarding an adjustment of the demanded ransom amount and/or an extension of the payment deadline.
+    - The attackers exert increased pressure, for example by threatening to delete data.
+    - The attackers threaten to publish exfiltrated data (Double Extortion).
+    - The attackers insist on their original demand and show no willingness to reduce the ransom amount or adjust the payment deadline.
+    - The attackers do not respond or break off communication.
+rss0102:
+  title: "Preparing for Attacker Pressure Tactics"
+  anchor: preparing-for-attacker-pressure-tactics
+  intro: |
+    The goal of the attackers is to compel the affected organization to pay the ransom.
+    Pressure can be exerted on the organization and the negotiator using various psychological strategies.
+    By preparing for potentially used pressure tactics by the attackers, the situation during negotiation can be better assessed and informed decisions can be made.
+  outro: |
+    Attackers often attempt to exert pressure through the following strategies:
+
+    - Constant threats: Repeated emphasis on the potential impact of the attack on the organization's systems, data, and reputation if demands are not met is intended to be intimidating.
+    - Demonstration of power: Knowledge of the affected organization's infrastructure, vulnerabilities, or sensitive information can be used by attackers to demonstrate that they are in control.
+    - Setting strict deadlines: Strict deadlines create time pressure to limit a thorough assessment of the situation or the engagement of support.
+    - Emotional manipulation: Attackers may generate fear, guilt, or feelings of responsibility to cloud judgment and trigger hasty action.
+rss0103:
+  title: "Establishing a Schedule"
+  anchor: establishing-a-schedule
+  intro: |
+    To realistically assess and appropriately communicate internal processes, a rough schedule should be developed.
+    It must be taken into account that various factors can lead to delays in the negotiation or ransom payment.
+    Such factors can include internal approval of the payment, procurement of the payment method, or confirmation of the transaction.
+    Therefore, it should be assessed within what timeframe the measures for preparing and executing a potential ransom payment can be implemented.
+rss0104:
+  title: "Principles for Negotiations"
+  anchor: principles-for-negotiations
+  intro: |
+    During negotiations, it is often necessary to exchange information.
+    However, this information should be limited, and some information should **never** be shared if possible, to avoid telling the attacker anything that could later be used for another attack.
+    Some information that is initially withheld can later be strategically used as leverage in negotiations to reduce the ransom demand or reach an agreement more quickly.
+  outro: |
+    - Information that should **never** be shared:
+
+        - Name of the affected organization
+        - Type of organization
+        - Extent of the impact
+        - Financial status
+        - Real name of the negotiator
+
+    - Information that can be **strategically used**:
+
+        - How quickly the payment can be made
+        - Number of affected systems
+        - Whether the organization has insurance
+        - Amount of immediately available funds
+rss0105:
+  title: "Proof-of-Life Decryption"
+  anchor: proof-of-life-decryption
+  intro: |
+    When files are encrypted and inaccessible, a proof of life is typically obtained by sending two to three files to the adversary and requesting that they return decrypted copies of the files.
+  outro: |
+    The files should be carefully selected and meet the following criteria.
+
+    **Innocuous Files**<br>
+    Most adversaries have policies about what type of files are acceptable for proof-of-life decryption.
+    Most attackers will not decrypt Excel files, large Word documents, database tables, or other files that appear "important" to the business.
+    Many attackers also limit the file size of requested files, especially if they use email as a means of communication, as most email clients limit the size of attachments.
+
+    **No Identifying Information**<br>
+    Files should not contain logos or information that identifies the organization.
+    Photos should also be avoided.
+    The selected files should not contain personally identifiable data or reveal trade secrets or confidential network information.
+
+    **Multiple Locations or Devices**<br>
+    Some ransomware strains require a separate decryption key for each infected device.
+    Depending on the method by which files on systems are infected, multiple decryption keys may be required for a single device.
+    Therefore, infected files should be selected from multiple locations, and if more than one device was encrypted, files from multiple devices.
+    Depending on the strain, it may also be necessary to collect ransom notes from each file storage location.
+rss0106:
+  title: "Proof of Data Exfiltration"
+  anchor: proof-of-data-exfiltration
+  intro: |
+    If data has been exfiltrated, attackers may threaten to publish this data.
+    Request proof from the attackers showing that they are in possession of the data.
+rss0107:
+  title: "Updating and Hardening"
+  anchor: updating-and-hardening
+  intro: |
+    After successful restoration or reinstallation, all available security updates and patches for the operating system, applications, and firmware are applied to close existing vulnerabilities.
+    Subsequently, hardening should be performed according to established security guidelines (e.g., BSI, CIS Benchmarks) – this includes removing unnecessary services, adjusting default configurations, enforcing strong authentication mechanisms, and implementing restrictive firewall and permission concepts.
+rss0108:
+  title: "Data Migration"
+  anchor: data-migration
+  intro: |
+    The transfer of data from an old system to a new system is carried out only after a positive integrity check.
+    During the data transfer, there must be no direct connection between the old and new system or between the network environments.
+    Instead, removable storage media such as external hard drives are used for the transfer.
+    The process of data migration, responsibilities, and the remaining risk must be documented.
+rss0109:
+  title: "Verification and Quarantine"
+  anchor: verification-and-quarantine
+  intro: |
+    Systems restored from a backup are checked for compromise in the yellow network.
+    If the system is compromised, it is transferred to the red network and should be decommissioned.
+    If the verification reveals no anomalies, the system remains quarantined in the yellow network for a defined period (e.g., 48 hours) before being transferred to the new environment.
+rss0110:
+  title: "Activation of Cloud Security Mechanisms"
+  anchor: activation-of-cloud-security-mechanisms
+  intro: |
+    To secure the cloud environment, native security mechanisms should be utilized.
+    To achieve effective protection, it is recommended to seek advice from an experienced expert for the configuration.
+    Additionally, the security settings should be regularly reviewed.
+  outro: |
+    The following features can ensure a basic level of security:
+
+    - Multi-factor authentication (MFA)
+    - Conditional Access policies: Access controls, for example by enforcing MFA or restricting permitted devices and locations.
+    - Privileged Access Management: Enhanced monitoring of logins from privileged user accounts.
+
+    Additionally, both tenant-wide logs and user logs should be activated to ensure appropriate visibility going forward.
+rss0111:
+  title: "Resetting Changed Settings"
+  anchor: resetting-changed-settings
+  intro: |
+    Attackers have potentially changed settings at the user and/or tenant level.
+    These must be reviewed and reset.
+  outro: |
+    - Review and cleanup at **user level**:
+
+        - Verify MFA methods
+        - Delete app passwords
+        - Verify recovery email and phone number
+        - Remove mailbox forwarding rules
+        - Check inbox rules
+        - Check permissions on own mailbox (“Send As”, “Full Access”, “Send on Behalf”)
+        - Remove app permissions for email access (OAuth Grants)
+        - Check registered devices and remove if necessary
+        - Review group memberships
+
+    - Review and cleanup at **tenant level**:
+
+        - Review newly created users and remove if necessary
+        - Review newly created or changed groups and their permissions and remove if necessary
+        - Check changed roles or global permissions
+        - Review new Service Principals, App Registrations, and their permissions and remove if necessary
+        - Check Conditional Access policies
+        - Check risk policies
+        - Check spam/phishing policies
+        - Review logging settings and log retention period
+rss0112:
+  title: "Transfering Data from Emergency Operations"
+  anchor: transfering-data-from-emergency-operations
+  intro: |
+    If important data was created or modified during emergency operations, it must later be migrated to the new production environment.
+    A re-compromise through attacker access or faulty processes must be avoided at all costs.
+    Planning must therefore be carried out carefully, taking into account all circumstances of the individual emergency operations.
+  outro: |
+    The following basic conditions need to be considered:
+
+    - If the systems originate from the compromised environment, they must not be used further and the data has to be migrated.
+    - If the emergency operations were set up in a completely new environment, the systems can potentially be migrated.
+    - Measures that were omitted due to time constraints must be made up for (hardening, updating).
+    - Depending on the type of data, it should be checked for compromise before migration if applicable.
+rss0113:
+  title: "Separation of Old and New Systems"
+  anchor: separation-of-old-and-new-systems
+  intro: |
+    Potentially compromised clients must be strictly separated from newly set up systems.
+    This separation should be both physical (e.g., separate rooms) and logical (e.g., VLAN, quarantine network).
+    Additionally, no direct connections between potentially compromised systems and new systems in the production network may be permitted.
+    For clear identification of newly set up devices, they can be marked with colored stickers.
+rss0114:
+  title: "Operating System and Software Deployment"
+  anchor: operating-system-and-software-deployment
+  intro: |
+    For reinstallation, a verified current Golden Image should be used, which is deployed automatically via a deployment tool.
+    Additional standard software and security tools should also be installed automatically.
+    All newly installed devices are equipped with an EDR ([RS059](rp013.md#installation-edr)).
+    If remote forensics software is in use, it should also be installed ([RS021](rp002.md#technical-preparation-for-in-depth-analysis)).
+  outro: |
+    Before installing the software, it must be ensured that the hostname is correctly set and the base installation of the system is complete.
+
+    Furthermore, the following principles should be satisfied:
+
+    - Use of randomized initial passwords
+    - Force password change on first login
+    - Enable MFA where possible
+    - Secure handover of new credentials to users
+rss0115:
+  title: "Lifting of Isolation"
+  anchor: lifting-of-isolation
+  intro: |
+    The isolation of individual systems is gradually lifted once they have been fully restored, security-checked, and approved.
+    Reintegration is carried out directly through migration to the green network.
+    It must be ensured that at no point in time a connection to other systems and networks exists.
+    This controlled process minimizes the risk of reinfection and enables a secure transition to the regular newly built environment.
+rss0116:
+  title: "Decommissioning IR Network Environment"
+  anchor: decommissioning-ir-network-environment
+  intro: |
+    The network segmentation introduced for incident response with the red, yellow, and green networks is gradually rolled back after the rebuild is completed.
+    Systems from the yellow network are only migrated to the green network after successful verification and approval.
+    The complete removal of segmentation only takes place once all systems have been securely transferred.
+rss0117:
+  title: "Review of the Final Incident Report"
+  anchor: review-of-the-final-incident-report
+  intro: |
+    The involved IR service provider will delete all data collected and analyzed in connection with the security incident after the project ends.
+    Questions about the investigation and its results can only be answered to a very limited extent afterwards.
+    Therefore, the final report should be carefully reviewed to clarify questions and ambiguities in discussion with the service provider.
+rss0118:
+  title: "Distribution of the Report"
+  anchor: distribution-of-the-report
+  intro: |
+    Additional stakeholders may want or need to review the report, therefore it must be determined to which parties the final report must or should be distributed.
+rss0119:
+  title: "Uninstalling Remote Forensics Tooling"
+  anchor: uninstalling-remote-forensics-tooling
+  intro: |
+    In the case of remote forensics, the deployed tooling can usually be removed from the affected systems by the service provider at the end of the project.
+    Further action is only required if automated removal was not possible, e.g., because certain systems were no longer reachable or remote access was generally no longer available.
+rss0120:
+  title: "Removal of Offline Forensics Tooling"
+  anchor: removal-of-offline-forensics-tooling
+  intro: |
+    If offline forensics tooling was used, the associated artifacts should be removed.
+    Information about the storage location and deployment method of the tools can be provided by the person who executed the tooling ([RS021](rp002.md#technical-preparation-for-in-depth-analysis)).

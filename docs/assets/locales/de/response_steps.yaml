@@ -1,0 +1,973 @@
+rs000:
+  title: Risikoanalyse
+  anchor: risikoanalyse
+  intro: |
+    Regelmäßige Risikoanalysen helfen durch die Identifizierung und Priorisierung organisationsspezifischer Angriffsmöglichkeiten, kritische Prozesse und Systeme innerhalb der Organisation zu identifizieren und in der Folge deren Absicherung und Überwachung zu verstärken.
+    Weiterhin bilden die Identifizierung und Priorisierung kritischer Geschäftsprozesse die Grundlage für die Bewertung und Eskalation von Sicherheitsvorfällen sowie für Planung und Aufbau eines Notbetriebs und den Wiederaufbau in Folge im Zuge der Vorfallsbewältigung.
+rs001:
+  title: Backupkonzept
+  anchor: backupkonzept
+  intro: |
+    Ein vollständiges und sauberes Backup bildet die Grundlage für die Wiederherstellung der Umgebung oder einzelner Systeme nach einem IT-Sicherheitsvorfall.
+    Um Backups vor einer Kompromittierung durch Angreifer zu schützen, sollte die Backup-Lösung kein Teil der Domäne sein und für den Login ausschließlich ein lokaler Benutzer mit einem sicheren Passwort verwendet werden.
+    In Vorbereitung auf einen IT-Sicherheitsvorfall sollten außerdem Prozesse zum Schutz des Backups sowie zur Wiederherstellung bei bestehenden Eindämmungsmaßnahmen erarbeitet werden.
+rs002:
+  title: Implementierung von Sicherheitsrichtlinien
+  anchor: implementierung-von-sicherheitsrichtlinien
+  intro: |
+    Zum Schutz von Vertraulichkeit und Integrität der Daten und Systeme in der IT-Infrastruktur einer Organisation sollten einige grundlegende Sicherheitsrichtlinien beispielsweise zum Umgang mit Daten und Informationen, zur Nutzung des Netzwerks und zur Absicherung von Nutzerkonten durch die Verwendung sicherer Passwörter und Multi-Faktor-Authentifizierung aufgestellt und durchgesetzt werden.
+rs003:
+  title: Vorbereitung Quarantänenetzwerk
+  anchor: vorbereitung-quarantanenetzwerk
+  intro: |
+    Das Quarantänenetzwerk dient der vorübergehenden und kurzfristigen Isolierung von Systemen, die möglicherweise durch eine Malware oder einen Angreifer infiziert wurden.
+    Besteht ein Quarantänenetzwerks kann ein System unmittelbar nach der Erkennung einer mutmaßlichen Kompromittierung darin isoliert und auf diese Weise eine Ausweitung des Vorfalls auf andere Systeme oder Netzwerkbereiche verhindert werden.
+    Bei dieser Isolierung einzelner Systeme handelt es sich um eine Erstmaßnahme, die bereits im Vorfeld durch die Einrichtung eines Quarantänenetzwerks vorbereitet werden kann.
+rs004:
+  title: Baselining der Infrastruktur
+  anchor: baselining-der-infrastruktur
+  intro: |
+    Um Anomalien erkennen und Alarme bei der Detektion effetkiv bewerten sowie falsch-positive Meldungen identifizieren zu können, sollte zunächst ein Baselining der Infrastruktur durchgeführt und auf diese Weise Kenntnisse über reguläre Aktivitäten und Verhaltensweisen im Netzwerk erlangt werden.
+    Hilfreich sein können zum Beispiel Kenntnisse über das reguläre Log-In-Verhalten von Nutzern oder Umfang und zeitliche Verteilung von Netzwerk-Traffic.
+rs005:
+  title: Erarbeitung von Grundlagen für die Vorfallsbewertung
+  anchor: erarbeitung-von-grundlagen-fur-die-vorfallsbewertung
+  intro: |
+    Die Einstufung eines Vorfalls als Störung, Notfall, geringfügiger oder schwerwiegender Vorfall ist von Organisation zu Organisation unterschiedlich.
+    Grundlage für die Bewertung sind das Ausmaß der herrschenden Einschränkungen und die Auswirkungen auf die Kernprozesse der Organisation.
+    Um die Klassifikation und Eskalation eines Vorfalls im Verdachtsfall zu beschleunigen, sollten vorbereitend Bewertungskriterien erarbeitet werden, die an die Organisation und ihre kritischen Geschäftsprozesse angepasst sind.
+rs006:
+  title: Vorbereitung und Planung eines Notbetriebs
+  anchor: vorbereitung-und-planung-eines-notbetriebs
+  intro: |
+    Die Planung des Notbetriebs und damit einhergehend die Priorisierung der Dienste und Anwendungen erfolgt im Idealfall proaktiv im Rahmen der Vorbereitung auf mögliche IT-Sicherheitsvorfälle ([RP000](rp000.md)).
+    Eventuell liegen Planungen nicht spezifisch für einen IT-Sicherheitsvorfall vor, die trotzdem herangezogen werden können.
+    Auch vorliegende Planungen eines Business Continuity Management (BCM) können genutzt werden.
+    Liegt keine entsprechende Planung vor erfolgt die Planung ad hoc im Sicherheitsvorfall.
+rs007:
+  title: Vorhalten zusätzlicher Hard- und Software-Ressourcen
+  anchor: vorhalten-zusatzlicher-hard-und-software-ressourcen
+  intro: |
+    Während der Vorfallsbehandlung werden zusätzliche Hard- und Softwareressourcen benötigt, beispielsweise um einen Notbetrieb aufzubauen, Backups wiederherzustellen und die Arbeitsfähigkeit von Krisenstab und Notfallteams zu gewährleisten.
+    Um diese kurzfristig bereitstellen zu können, sollten entsprechende Ressourcen vorab beschafft und vorgehalten werden.
+rs008:
+  title: IR-Service Vertrag
+  anchor: ir-service-vertrag
+  intro: |
+    Um bei einem IT-Sicherheitsvorfall schnell und zuverlässig Unterstützung durch einen Incident Response Dienstleister zu erhalten, sollte ein Service-Vertrag abgeschlossen werden, der die Verfügbarkeit des Dienstleisters garantiert und verbindliche Reaktionszeiten beinhaltet.
+    Ein Dienstleister kann außerdem die Vorbereitung auf einen Vorfall unterstützen.
+rs009:
+  title: Ausarbeitung Krisenplanung
+  anchor: ausarbeitung-krisenplanung
+  intro: |
+    Durch die Ausarbeitung einer umfassenden Krisenplanung und eines IT-Notfallplans können viele zeitaufwendige organisatorische Schritte in der akuten Vorfallsbewältigung zumindest beschleunigt – zum Teil sogar übersprungen – werden, da Prozesse, Rollen und Zuständigkeiten klar definiert sind.
+    Liegen Planungen nicht spezifisch für einen IT-Sicherheitsvorfall vor, können diese trotzdem herangezogen werden.
+    Auch vorliegende Planungen eines Business Continuity Management (BCM) können genutzt werden.
+  outro: |
+    Folgende Schritte der Vorbereitungsphase finden Eingang in die Planung und werden darin zentral dokumentiert:
+
+    - Grundlagen für die Vorfallsbewertung ([RS005](rp000.md#erarbeitung-von-grundlagen-fur-die-vorfallsbewertung))
+    - Vorbereitung und Planung eines Notbetriebs ([RS006](rp000.md#vorbereitung-und-planung-eines-notbetriebs))
+    - Organisation der Krisenstabsarbeit ([RS097](rp000.md#organisation-der-krisenstabsarbeit))
+    - Erstellung von Kontaktlisten ([RS049](rp000.md#erstellung-von-kontaktlisten))
+
+    Die Krisen- und Notfallplanung muss regelmäßig überprüft und aktualisiert werden.
+    Des Weiteren müssen die Pläne praktisch beübt werden (siehe [RS011](rp000.md#notfallubungen)), um alle Beteiligten mit den Inhalten vertraut zu machen, den Umgang damit zu trainieren sowie Planungslücken aufzuzeigen und beheben zu können.
+    Um im Notfall die Verfügbarkeit der Planungsunterlagen zu gewährleisten, sollten mehrere digitale Kopien der Dokumentation abgelegt und einige physische Exemplare vorgehalten werden.
+    Die Ablageorte müssen den Krisenstabsmitgliedern bekannt sein.
+rs010:
+  title: Schulung der Mitarbeiter
+  anchor: schulung-der-mitarbeiter
+  intro: |
+    In Vorbereitung auf einen potenziellen IT-Sicherheitsvorfall sollten die Mitglieder des Krisenstabs durch geeignete Schulungen auf ihre Rolle in der Vorfallsbewältigung vorbereitet werden.
+    Darüber hinaus müssen alle Mitarbeiter der Organisation auf das Thema IT-Sicherheit aufmerksam gemacht werden, um ein grudlegendes Bewusstsein für Angriffe deren möglichen Folgen zu schaffen.
+    Solche Schulungen sollten regelmäßig, mindestens jährlich, durchgeführt werden.
+rs011:
+  title: Notfallübungen
+  anchor: notfallubungen
+  intro: |
+    Vorbereitete Maßnahmen und Prozesse müssen regelmäßig geübt und getestet werden, um im Notfall einen möglichst reibungsarmen Ablauf zu gewährleisten.
+    Übungen helfen einerseits den Beteiligten, Abläufe zu verinnerlichen, andererseits werden Lücken in der Vorbereitung sichtbar und können im Anschluss gezielt behoben werden.
+    Die folgenden Übungen bilden jeweils einen Auschnitt der Vorfallsbewältigung ab und können als Teilübungen durchgeführt werden.
+    Zusätzlich sollte der Bewältigungsprozess als Ganzes durch eine Table-Top-Übung oder eine umfassende Live-Übung trainiert werden.
+rs012:
+  title: Erhöhung der Sichtbarkeit
+  anchor: erhohung-der-sichtbarkeit
+  intro: |
+    Kritische Komponenten der IT-Infrastruktur müssen nicht nur hinsichtlich ihrer Verfügbarkeit und ihrer Servicequalität überwacht werden.
+    Auch sicherheitsrelevante Ereignisse müssen aufgezeichnet und möglichst in Echtzeit ausgewertet werden. Betriebssysteme und Anwendungen besitzen umfangreiche Protokollierungsmöglichkeiten.
+    Diese sind in den Standardeinstellungen allerdings oftmals nicht aktiv oder nicht optimal konfiguriert.
+    Diese zur Verfügung stehenden Möglichkeiten sollten genutzt werden, um alle sicherheitsrelevanten Informationen und administrative Tätigkeiten zu sammeln.
+rs013:
+  title: Überprüfung akuter Angriffsindikatoren
+  anchor: uberprufung-akuter-angriffsindikatoren
+  intro: |
+    Akute Angriffsindikatoren deuten auf einen bereits erfolgten oder gerade stattfindenden Angriff hin.
+    Solche Indikatoren können Warnhinweise von Antivirussoftware, EDR-Alarme, veränderte Dateiendungen, Abweichungen vom üblichen Netzwerktraffic oder wiederholte gescheiterte Login-Versuche unbekannten Ursprungs sein.
+    Auftretende Hinweise müssen sorgfältig überprüft und geeignete Maßnahmen zur Mitigierung getroffen werden.
+rs014:
+  title: Überprüfung langfristiger Angriffsvorboten
+  anchor: uberprufung-langfristiger-angriffsvorboten
+  intro: |
+    Langfristige Angriffsvorboten können Hinweise auf einen potentiellen zukünftigen Sicherheitsvorfall sein.
+    Solche Hinweise können beispielsweise festgestellte Schwachstellenscans auf einem Server oder Meldungen zur aktiven Ausnutzung von Sicherheitslücken bei einem durch die Organisation genutzten Dienst sein.
+    Auftretende Hinweise müssen sorgfältig überprüft und geeignete Maßnahmen zur Mitigierung des Risikos getroffen werden.
+rs015:
+  title: Kontinuierliche Anomalieerkennung
+  anchor: kontinuierliche-anomalieerkennung
+  intro: |
+    Die Überprüfung akuter Angriffsindikatoren ([RS013](#uberprufung-akuter-angriffsindikatoren)) sowie langfristiger Angriffvorboten ([RS014](#uberprufung-langfristiger-angriffsvorboten)) müssen fortlaufend erfolgen, um eine möglichst lückenlose Angriffserkennung zu erreichen.
+    Diese kann durch den Einsatz von Software unterstützt werden, erfordert jedoch ständige Überprüfung.
+    Grundvoraussetzungen für eine effektive Anomalieerkennung sind weitreichende Protokollierung und das Aggregieren von Log-Daten zur Erhöhung der Sichtbarkeit ([RS012](#erhohung-der-sichtbarkeit)) sowie Kenntnis über das das Normalverhalten innerhalb der Infrastruktur ([RS004](rp000.md#baselining-der-infrastruktur)).
+rs016:
+  title: Dokumentation aller Maßnahmen
+  anchor: dokumentation-aller-manahmen
+  intro: |
+    In allen Phasen der Vorfallsbewältigung sollten gefasste Beschlüsse, Erkenntnisse und umgesetzte Maßnahmen dokumentiert werden.
+    Dies vereinfacht zum einen spätere oder wiederkehrende Schritte wie Schichtübergaben und Lagefeststellung, zum anderen unterstützt die Dokumentation die spätere Aufarbeitung.
+    Erkenntnisse sollten Stichpunktartig oder in Tabellenform notiert werden.
+    Dabei sollte erkennbar gemacht werden, ob es sich bei der jeweiligen Notiz, um eine Beobachtung, Analyse, Hypothese, Maßnahme, einen Auftrag oder eine Entscheidung handelt.
+    Zudem sollten Zeitpunkt der Eintragung und der damit in Verbindung stehende Mitarbeiter dokumentiert werden.
+  outro: |
+    Beobachtung, Analyse und Hypothese können wie folgt voneinander unterschieden werden:
+
+    **Beobachtung:** wurde ohne aktives Zutun bemerkt
+
+    **Analyse:** wurde durch aktives Zutun herausgefunden
+
+    **Hypothese:** Schlüsse, die gezogen wurden, ohne Belege
+rs017:
+  title: Initiale Analyse
+  anchor: initiale-analyse
+  intro: |
+    Der ersten Analyse kommt besondere Bedeutung zu, da sie ausschlaggebend für die Einordnung des Vorfalls, die darauffolgende Eskalation und Initialisierung von Sofortmaßnahmen zur Eindämmung ist.
+    Insbesondere sollte geprüft werden, ob es sich um eine Falsch-Positiv-Meldung handelt.
+    Erhärtet sich der Verdacht einer Kompromittierung, folgt die Eskalation des Vorfalls ([RS019](rp002.md#eskalation-des-vorfalls)).
+    Lässt sich nicht feststellen, ob eine Falsch-Positiv-Meldung vorliegt, wird der Vorfall ebenfalls eskaliert.
+rs018:
+  title: Einstufung als Major Incident
+  intro: |
+    Die Einstufung des Vorfalls bestimmt maßgeblich das weitere Vorgehen zur Vorfallsbehandlung.
+    Bestehen keine vorbereiteten Kriterien zur Bewertung und Eskalation eines Sicherheitsvorfalls, erfolgt die Bewertung durch Überprüfung der bestehenden Einschränkungen.
+    Betrifft der Sicherheitsvorfall Kernprozesse der Organisation oder Prozesse, die als kritisch eingestuft sind und schränkt damit den regulären Betrieb maßgeblich ein, liegt ein schwerwiegender IT-Sicherheitsvorfall (*Major Incident*) vor.
+rs019:
+  title: Eskalation des Vorfalls
+  anchor: eskalation-des-vorfalls
+  intro: |
+    Zur Einleitung der Vorfallsbewältigung wird der bestätigte Vorfall eskaliert.
+    Die Eskalation umfasst die interne Meldung, die Initialisierung von Erstmaßnahmen zur Eindämmung sowie das Hinzuziehen eines IR-Dienstleisters.
+rs020:
+  title: Inhaltliche Vorbereitung der Detailanalyse
+  anchor: inhaltliche-vorbereitung-der-detailanalyse
+  intro: |
+    In Vorbereitung auf die Detailanalyse sollte zunächst die Erwartungen an die Analyse geklärt und basierend darauf forensische Fragestellungen formuliert werden.
+    Inwieweit die Fragestellungen beantwortet werden können, ist stark abhängig von Menge und Qualität der verfügbaren Log-Daten.
+rs021:
+  title: Technische Vorbereitung der Detailanalyse
+  anchor: technische-vorbereitung-der-detailanalyse
+  intro: |
+    Um so schnell wie möglich festzustellen, in welchem Umfang die IT-Infrastruktur kompromittiert wurde und welche Systeme tatsächlich betroffen sind, können verschiedene Methoden und Software-Tools genutzt werden.
+    Welches Vorgehen zur Untersuchung sinnvoll und möglich ist sowie welche technischen Vorbereitungen (z. B. Installation von Software) für die Detailanalyse getroffen werden müssen, muss mit dem unterstützenden IR-Dienstleister abgestimmt werden.
+    Solange die technische Vorbereitung nicht abgeschlossen wurde, kann die Detailanalyse ([RS022](rp002.md#detailanalyse)) nicht beginnen.
+rs022:
+  title: Detailanalyse
+  anchor: detailanalyse
+  intro: |
+    Mit der Detailanalyse erfolgt die umfassende Untersuchung des Vorfalls anhand der in [RS020](rp002.md#inhaltliche-vorbereitung-der-detailanalyse) entwickelten forensischen Fragestellungen.
+    Die auf diese Weise erlangten Kenntnisse über den Angriff und ausgenutzte Schwachstellen sollten in den sicheren Wiederaufbau der Umgebung ([RP013](rp013.md)) einfließen.
+rs023:
+  title: OSINT-Recherche
+  anchor: osint-recherche
+  intro: |
+    Ergänzend zu der Untersuchung kompromittierter Systeme und der Flächenanalyse der Infrastruktur können durch die Nutzung von OSINT zusätzliche Infromationen gewonnen werden.
+    Die Auswertung frei verfügbarer Informationen aus öffentlichen Quellen kann beispielsweise Hinweise auf die Angreifer und potenziell verwendete Techniken ergeben, welche die Detailanalyse unterstützen.
+    Die auf diese Weise gewonnenen Hinweise können als Anhaltspunkte dienen, die OSINT-Recherche ersetzt jedoch nicht die Detailanalyse ([RS022](rp002.md#detailanalyse)).
+    Nur durch eine umfassende Untersuchung der kompromittierten Infrastruktur können die in [RS020](#inhaltliche-vorbereitung-der-detailanalyse) formulierten Fragestellungen beantwortet und das Angriffsgeschehen nachvollzogen werden.
+rs024:
+  title: Identifizierung betroffener Systeme und Prozesse
+  anchor: identifizierung-betroffener-systeme-und-prozesse
+  intro: |
+    Eine Kompromittierung eines Systems (Client / Server) kann mithilfe verschiedener Informationsquellen erkannt werden.
+    Die zur Verfügung stehenden Informationsquellen sollten kontinuierlich auf Anzeichen für eine Kompromittierung überprüft werden.
+    Sollten Systeme Anzeichen einer Kompromittierung aufweisen, müssen diese umgehend gemäß [RS025](#isolation-betroffener-systeme) isoliert werden.
+    Außerdem muss geprüft werden welche Prozesse von den betroffenen Systemen abhängig sind.
+  outro: |
+    Folgende Informationsquellen können Hinweise auf eine Kompromittierung eines Systems geben:
+
+    - Security Information and Event Management (SIEM) System
+    - Intrusion Detection System (IDS)
+    - Antivirus / Endpoint Detection and Response (EDR)
+    - Protokolle von Firewall, Betriebssystemen, Anwendungen usw.
+rs025:
+  title: Isolation betroffener Systeme
+  anchor: isolation-betroffener-systeme
+  intro: |
+    Gibt Anzeichen für eine Kompromittierung, müssen die betroffenen Systeme umgehend isoliert werden.
+    Die Vorgehensweise richtet sich nach dem Ausmaß der Kompromittierung.<br><br>
+    %warning% **Achtung:** Es darf keine Anmeldung mit einem administrativen Benutzerkonto an einem potenziell kompromittiertem System erfolgen, solange es noch mit dem produktiven Netzwerk und / oder dem Internet verbunden ist!
+  outro: |
+    Betroffene Systeme sollten nicht ausgeschaltet werden, sofern dies nicht zu Isolationszwecken erforderlich ist.
+    Die isolation der betroffenen Systeme erfolgt möglichst netzwerkseitig, beispielsweise in einem Quarantänenetzwerk ([RS003](rp000.md#vorbereitung-quarantanenetzwerk)) oder durch Nutzung der Quarantänefunktion des EDRs.
+    Falls noch nicht geschehen, folgt die Eskalation des Vorfalls gemäß [RS019](rp002.md#eskalation-des-vorfalls).
+    Handelt es sich um eine Kompromittierung der gesamten Umgebung, sollten außerdem die folgenden Schutzmaßnahmen eingeleitet werden:
+
+    - Trennung Internetverbindung ([RS026](#trennung-internetverbindung))
+    - Trennung von anderen Standorten ([RS027](#trennung-von-anderen-standorten))
+    - Schutz des Backups ([RS028](#schutz-des-backups))
+rs026:
+  title: Trennung Internetverbindung
+  anchor: trennung-internetverbindung
+  intro: |
+    Die betroffenen Netzwerkbereiche oder Standorte werden vom Internet getrennt, um Zugriffe von außen zu unterbinden.
+    Die Trennung der Internetverbindung sollte nach Möglichkeit über entsprechende Firewall-Regeln realisiert werden.
+    Auf diese Weise können später, zum Beispiel für die Analyse, felxibel Ausnahmen eingerichtet werden.
+    Ist dies nicht möglich kann die Verbindung durch Ziehen des Netzwerksteckers hart getrennt werden.
+rs027:
+  title: Trennung von anderen Standorten
+  anchor: trennung-von-anderen-standorten
+  intro: |
+    Zum Schutz externer Standorte, welche basierend auf dem jeweiligen Lagebild keine eindeutigen Anzeichen einer Kompromittierung aufweisen und daher unter Umständen nicht von dem Vorfall betroffen sind, sollten die jeweiligen Standorte isoliert und überprüft werden.
+rs028:
+  title: Schutz des Backups
+  anchor: schutz-des-backups
+  intro: |
+    Besteht der Verdacht eines Ransomware-Angriffs müssen unverzüglich vorhandene Backups geschützt werden.
+    Dazu müssen die Backups durch Trennung der Netzwerkverbindung isoliert oder heruntergefahren werden.
+    Wenn die Backup-Lösung Teil der Domäne ist (z. B. der Login findet mit einem Domänen-Benutzer in der Verwaltungsoberfläche statt), sollte zudem die Backup-Lösung aus der Domäne genommen und ein neuer lokaler Benutzer mit einem sicheren Passwort (mindestens 25 Zeichen und vier verschiedene Zeichenarten) eingerichtet werden.
+rs029:
+  title: Identifizierung Ransomware-Angriff
+  anchor: identifizierung-ransomware-angriff
+  intro: |
+    Bei einem weitreichenden Ausfall von Systemen sollte geprüft werden, ob Anzeichen für eine Kompromittierung durch Ransomware vorliegen.<br><br>
+    %warning% **Achtung:** Ein bestätigter Ransomware-Angriff ist **immer** als sog. Major Incident zu werten.
+    Bei dieser Art von Angriff sollte umgehend ein IR-Dienstleister hinzugezogen werden, da solch einem IT-Sicherheitsvorfall meist ein komplexes Angriffsszenario vorausgeht, welches umfangreiche und gegenseitig voneinander abhängige Maßnahmen erforderlich macht, deren Zusammenhänge nicht in einem einzelnen Incident Response Playbook abgebildet werden können.
+  outro: |
+    Eine Kompromittierung durch Ransomware kann unter anderem durch die folgenden Gegebenheiten bestätigt werden:
+
+    - Vorliegen von verschlüsselten Dateien: Die verschlüsselten Dateien haben meist eine ungewohnte Dateiendung.
+    - Vorliegen einer Ransomware-Notiz: Angreifer hinterlassen in der Regel eine Datei (z. B. Restore-My-Files.txt) in der sie beschreiben, dass alle Daten verschlüsselt wurden und wie diese gegen Zahlung eines Lösegelds entschlüsselt werden können.
+    - überprüfte Meldung eines Security-Produktes (z. B. Endpoint Protection, IDS)
+rs030:
+  title: Blockieren externer Zugänge
+  anchor: blockieren-externer-zugange
+  intro: |
+    Sofern keine vollständige Trennung der Internetverbindung ([RS026](#trennung-internetverbindung)) möglich ist, sollten zumindest sämtliche Dienste, die einen Zugriff auf das Netzwerk von außen ermöglichen, deaktiviert werden.
+  outro: |
+    Folgende Dienste sollten blockiert werden:
+
+    - Portweiterleitungen, die den RDP-Zugriff aus dem Internet ermöglichen
+    - VPN-Zugänge
+    - SSH-Dienste, auf die über das öffentliche Internet zugegriffen werden kann
+rs031:
+  title: Notfall-Reset des KRBTGT-Accounts
+  anchor: notfall-reset-des-krbtgt-accounts
+  intro: |
+    Gelingt es Angreifern, Zugriff auf den Passwort-Hash des krbtgt-Accounts zu erlangen, sind sie in der Lage, mittels eines sogenannten Golden Tickets gültige Kerberos-Tickets für beliebige Benutzer oder Systeme auszustellen.
+    Damit durch eine Änderung des Passworts nicht sofort alle Kerberos-Tickets im AD ihre Gültigkeit verlieren, wird immer auch das vorherige Kennwort des krbtgt-Accounts im AD gespeichert.
+    Aus diesem Grund ist für einen Reset eine zweimalige Änderung des Passworts erforderlich, um das Golden Ticket für Angreifer wertlos zu machen.
+    Besteht der Verdacht einer Kompromittierung des Accounts, sollte in Erwägung gezogen werden, das Passwort des krbtgt-Accounts unmittelbar zweimal hintereinander zu ändern.
+  outro: |
+    %warning% **Achtung:** Bei einem Notfall-Reset ist mit massiven Auswirkungen in der Umgebung zu rechnen, da alle Kerberos-Tickets mit sofortiger Wirkung ihre Gültigkeit verlieren.
+    Diese Maßnahme sowie deren Auswirkungen auf den Betrieb müssen daher sorgsam abgewogen werden.
+
+    Die einzelnen Schritte zur Durchführung des Notfall-Resets sind:
+
+    - DC mithilfe der PDC-Emulator Rolle (FSMO Role Holder) der Domäne bestimmen
+    - Per Active Directory Users and Computers (ADUC) Console eine Verbindung mit dem DC aus vorherigen Schritt herstellen und unter Ansicht die erweiterten Features aktivieren.
+    - Passwort des Accounts krbtgt in der Organizational Unit (OU) Users setzen. Die Haken bei Benutzer muss Kennwort bei der nächsten Anmeldung ändern und Sperre des Benutzerkontos aufheben nicht setzen. Das dabei gewählte Passwort muss nur der Kennwortrichtlinie entsprechen.
+    Das System wählt anschließend automatisch ein zufälliges, ausreichend langes Passwort für den Account.
+    - Passwort ein zweites Mal wie beschrieben zurücksetzen.
+    - Zweifachen Passwort-Reset für die Accounts der RODCs KRBTGT_### ebenfalls durchführen, wenn vorhanden.
+    - Prüfen, ob die Replikation des Passwort-Resets auf allen DCs, die aktuell online und erreichbar sind, erfolgt ist
+rs032:
+  title: Umgang mit kompromittierten Nutzerkonten
+  anchor: umgang-mit-kompromittierten-nutzerkonten
+  intro: |
+    Kann der Verdacht einer Kompromittierung des Benutzerkontos nicht eindeutig widerlegt werden, ist im Zweifelsfall von einer Kompromittierung auszugehen.
+    Grundsätzlich sind alle Zugangsdaten eines Benutzers für jegliche Systeme zu sperren, falls der Verdacht einer Kompromittierung des jeweiligen Benutzerkontos besteht.
+    Dies gilt insbesondere für Zugangsdaten zu extern erreichbaren Diensten und Anwendungen wie VPN- und Remote-Access-Lösungen sowie für sicherheitskritische Systeme (z. B.: Backup-Lösungen, etc.).
+  outro: |
+    Folgende Schritte sollten zur Eindämmung durchgeführt werden:
+
+    - Sperrung Nutzerkonto im AD
+    - Sperrung Nutzerkonto in Clouddiensten (insbesondere M365 / EntraID%accountresetde%) inklusive Widerruf aller aktiven Sitzungen des Benutzers
+    - Sperrung weiterer Konten mit gleichem Passwort
+    - Isolation der Systeme mit aktiver Sitzung der Nutzer
+rs033:
+  title: Einsatz einer internen Projektleitung
+  anchor: einsatz-einer-internen-projektleitung
+  intro: |
+    Die Behandlung des IT-Sicherheitsvorfalls und dessen Folgen sollten als Projekt betrachtet werden.
+    Zur Koordination der verschiedenen Arbeitsbereiche sollte ein Projektleiter eingesetzt werden.
+    Die Projektleitung sollte – soweit möglich – nicht die Geschäftsführung sein.
+rs034:
+  title: Bildung eines Krisenstabs
+  anchor: bildung-eines-krisenstabs
+  intro: |
+    Der Krisenstab ist ein planendes, koordinierendes, informierendes, beratendes und unterstützendes Organ.
+    Er stellt eine besondere temporäre Aufbauorganisation dar, die die normale Aufbauorganisation zur Bewältigung eines Notfalls durchbricht und abteilungsübergreifend Kompetenzen bündelt.
+    Zusätzlich zu organisationsintern besetzten Rollen des Krisenstabs kann in verschiedenen Bereichen externe Untersützung hinzugezogen werden.
+    Wurde vorbereitend auf einen Notfall ein Krisenstab definiert, wird dieser entsprechend der Planung einberufen.
+    Ist dies nicht der Fall, wird ad hoc ein Krisenstab gebildet.
+rs035:
+  title: Planung des initialen Krisenmeetings
+  anchor: planung-des-initialen-krisenmeetings
+  intro: |
+    Der Krisenstab sollte möglichst zeitnah zu einer ersten Sitzung zusammenkommen, in der die Lage analysiert wird, erste Entscheidungen getroffen und weitere Maßnahmen in die Wege geleitet werden.
+    Ein erstes Meeting des Krisenstabs wird für den nächstmöglichen Zeitpunkt angesetzt und die Krisenstabsmitglieder müssen ensprechend informiert werden.
+    Der Ablauf des initialen Krisenmeetings folgt [RP005](/docs/pages/response_phases/rp005.md).
+rs036:
+  title: Lagefeststellung
+  anchor: lagefeststellung
+  intro: |
+    Zu Beginn des initialen Krisenmeetings sowie aller folgenden Statusmeetings sollte zunächst eine Lagefeststellung durchgeführt werden, um alle Beteiligten auf einen gemeinsamen Informationsstand zu bringen und basierend darauf Handlungsoptionen erarbeiten und abwägen zu können.
+    Die Lagefeststellung dient zunächst als reine Faktensammlung und sollte auf das Wesentliche reduziert werden.
+    Die Bewertung der Lage folgt in [RS037](#lagebeurteilung).
+  outro: |
+    Die Lagefeststellung erfolgt anhand der folgenden Fragestellungen:
+
+    - Was ist passiert und wie ist die aktuelle Lage?
+    - Welche Systeme sind betroffen?
+    - Welche Geschäftsauswirkungen bestehen?
+    - Welche Maßnahmen wurden getroffen?
+
+    Abschließend sollten alle wichtigen Informationen aktualisiert werden.
+rs037:
+  title: Lagebeurteilung
+  anchor: lagebeurteilung
+  intro: |
+    Im Zuge der Lagebeurteilung erfolgt die Bewertung des Vorfalls und der aktuellen Lage.
+  outro: |
+    Folgende Fragestellung unterstützen die Lagebeurteilung:
+
+    - Mit welchen weiteren Geschehnissen muss als nächstes gerechnet werden?
+    - Welche Auswirkungen sind zu erwarten?
+    - Wie kann die weitere Ausbreitung des Schadens eingeschränkt werden?
+    - Wie kann der schon entstandene Schaden behoben werden?
+rs038:
+  title: Handlungsoptionen und Maßnahmenfestlegung
+  anchor: handlungsoptionen-und-manahmenfestlegung
+  intro: |
+    Basierend auf Lagefeststellung und Lagebeurteilung werden zunächst mehrerere Handlungsoptionen entwickelt, ohne diese unmittelbar zu bewerten.
+    Die Bewertung und Abwägung erfolgt in separaten Teilschritten, um sich vorerst nicht zu sehr einzuschränken.
+rs039:
+  title: Meldepflichten
+  anchor: meldepflichten
+  intro: |
+    Aus einem IT-Sicherheitsvorfall können sich verschiedene Meldepflichten ergeben.
+    Die Missachtung dieser Meldepflichten und ihrer Fristen kann häufig mit Bußgeldern geahndet werden, daher sollte eine gründliche Prüfung erfolgen.
+    Erster Ansprechpartner innerhalb der Organisation ist in der Regel der oder die Daten- oder Informationsschutzbeauftragte.
+    Darüber hinaus kann es sinnvoll sein, einen spezialisierten Anwalt zur Rechtsberatung hinzuzuziehen.
+rs040:
+  title: Cyberversicherung
+  anchor: cyberversicherung
+  intro: |
+    Besteht eine Cyber-Versicherung können daraus Vorgaben für die Vorfallsbewältigung folgen.
+    Ob ein Versicherungsschutz besteht und welche Bedingungen daran geknüpft sind, muss überprüft werden.
+rs041:
+  title: Prüfung der Lösegeldforderung
+  anchor: prufung-der-losegeldforderung
+  intro: |
+    Im Fall eines Ransomwareangriffs hinterlassen die Angreifer in der Regel eine Lösegeldforderung.
+    Es sollte dann zeitnah über den Umgang mit der Forderung entschieden werden.
+    Gegebenenfalls ist es sinnvoll, mit den Angreifern in Verhandlungen zu treten.
+    Auch wenn keine tatsächliche Zahlungsabsicht besteht, kann die Lösegeldverhandlung genutzt werden, um Zeit für die Koordination und Umsetzung anderer Maßnahmen zu gewinnen.
+rs042:
+  title: Externe Unterstützung
+  anchor: externe-unterstutzung
+  intro: |
+    Die Bewältigung eines Major Incidents ist ein langwieriger Prozess, der mit einer hohen Arbeitslast für die Beteiligten einhergeht.
+    Zugleich sollten insbesondere in der Phase des Wiederaufbaus bereits Maßnahmen zur nachhaltigen Absicherung der neuen Infrakstruktur umgesetzt werden, um zukünftige Vorfälle nach Möglichkeit zu vermeiden.
+    Um diesen Anforderungen gerecht zu werden, sollte – wo nötig und möglich – externe Unterstützung hinzugezogen werden.
+rs043:
+  title: Durchführung und Kontrolle
+  anchor: durchfuhrung-und-kontrolle
+  intro: |
+    Um die zeitnahe Umsetzung der beschlossenen Maßnahmen zu gewährleisten, werden diese in einzelne Aufgaben aufgeteilt.
+    Für jede Aufgabe werden Zuständigkeit und Zeitrahmen für die Umsetzung definiert und dokumentiert, um später den Fortschritt und Wirksamkeit der Maßnahme überprüfen zu können.
+rs044:
+  title: Regelung des Schichtbetriebs
+  anchor: regelung-des-schichtbetriebs
+  intro: |
+    Aufgrund der hohen Arbeitslast bei der Vorfallsbewältigung sowie der angestrebten kurzen Ausfallzeit kann es sinnvoll sein, vorrübergehend einen Schichtbetrieb einzurichten.
+    Im Zuge dessen müssen die Art des Schichtmodells sowie der Schichtübergabe geregelt werden.
+rs045:
+  title: Übergang zu regelmäßigen Statusmeetings
+  anchor: ubergang-zu-regelmaigen-statusmeetings
+  intro: |
+    Im weiteren Verlauf der Vorfallsbewältigung sollte der Krisenstab zu regelmäßigen Statusmeetings zusammen kommen.
+    Um diese produktiv und zu gestalten, sollte ein zunächst ein Meetingrythmus festgelegt werden.
+    Des Weiteren sollte ein festes Vorgehen zum Informationsaustausch zwischen dem Krisenstab als leitendem Organ der Vorfallsbewältigung und den Notfallteams etabliert werden.
+rs046:
+  title: Einrichtung Krisenstabsraum
+  anchor: einrichtung-krisenstabsraum
+  intro: |
+    Der Krisenstabsraum dient als zentraler Arbeits- und Meetingort des Krisenstabs.
+    Als solcher muss er allen Krisenstabsmitgliedern Platz bieten und möglichst ausfallsicher sein.
+rs047:
+  title: Bereitstellung Arbeitsmittel
+  anchor: bereitstellung-arbeitsmittel
+  intro: |
+    Um die Arbeitsfähigkeit von Krisenstab und Notfallteams zu gewährleisten, werden Büromaterialien und Technik benötigt.
+    Durch die Bereitstellung einfacher Büro- und Meetingmaterialien kann schnell eine grundlegende Arbeitsfähigkeit hergestellt werden.
+    Die Bereitstellung technischer Arbeitsmittel wie Notebooks oder einer Internetverbindung erfordert mehr Zeit, da vorhandene Systeme als kompromittiert zu betrachten sind und daher nicht verwendet werden dürfen.
+    Stattdessen müssen Ersatzgeräte beschafft werden.
+rs048:
+  title: Einrichtung vertraulicher Kommunikationkanäle
+  anchor: einrichtung-vertraulicher-kommunikationkanale
+  intro: |
+    Bei einer Kompromittierung der IT-Infrastruktur muss angenommen werden, dass die Angreifer auf E-Mails und andere interne Kommunikationsmittel der Organisation zugreifen können.
+    Bisher verwendete Cloud-Lösungen wie z. B. M365 sind häufig mit der IT vor Ort verbunden und können nicht prinzipiell als nicht-kompromittiert betrachtet werden.
+    Daher sollten sogenannte Out-of-Band-Kommunikationsmittel etabliert werden, welche unabhängig von der IT-Infrastruktur der Organisation fungieren.
+  outro: |
+    Um eine grundlegende Kommunikationsfähigkeit herzustellen und abzusichern, sollten die folgenden Schritte umgesetzt werden:
+
+    - Erstellen eines E-Mail-Kontos mit sicherem Passwort bei einem vertrauenswürdigen Anbieter
+    - Absicherung durch Mehrfaktorauthentifizierung
+    - Herstellen telefonischer Erreichbarkeit durch Nutzung von Mobiltelefonen der Firma oder private Geräte
+rs049:
+  title: Erstellung von Kontaktlisten
+  anchor: erstellung-von-kontaktlisten
+  intro: |
+    Die Kontaktdaten aller Krisenstabsmitglieder und weiterer Beteiligten der Vorfallsbehandlung sowie deren Erreichbarkeiten im Notfall müssen in Form von Kontaktlisten gesammelt werden.
+    Ebenfalls dokumentiert werden sollten die Erreichbarkeiten relevanter Ansprechpartner von Dienstleistern, Versicherung und Behörden (zum Beispiel BSI, Polizei, Landesdatenschutz, etc.).
+    Vorbereitete Kontaktlisten müssen regelmäßig überprüft und aktualisiert werden.
+    Wurden gemäß [RS048](../rp006.md#einrichtung-vertraulicher-kommunikationkanale) ad hoc alternative Kommunikationsmittel eingerichtet, müssen die Kontaktdaten aller Beteiligten gegebenenfalls neu zusammengestellt und verteilt werden.
+rs050:
+  title: Einrichtung einer zentralen Datenablage
+  anchor: einrichtung-einer-zentralen-datenablage
+  intro: |
+    Innerhalb der Krisenorganisation müssen laufend Daten und Dokumente ausgetauscht und aktualisiert werden.
+    Um zu gewährleisten, dass alle Krisenstabsmitglieder und an der Vorfallsbehandlung beiteiligte Mitarbeiter Zugriff auf einen einheitlichen Informationsstand haben, sollte eine zentrale Datenablage etabliert werden.
+rs051:
+  title: Einrichtung einer zentralen Dokumentationsplattform
+  anchor: einrichtung-einer-zentralen-dokumentationsplattform
+  intro: |
+    Sämtliche Dokumentation zum Vorfall und dessen Bewältigung sollte zentral an einem Ort abgelegt werden.
+    Wurde bereits eine zentrale Dokumentenablage eingerichtet ([RS050](#einrichtung-einer-zentralen-datenablage)) kann diese auch für die Dokumentation genutzt werden.
+    Auf diese Weise wird ein *Single Point of Truth* geschaffen, der allen Beteiligten zugänglich gemacht werden sollte, um unabhängig von Statusmeetings und wechselnder Schichtbelegung die Verfügbarkeit und Aktualität der Informationen zu gewährleisten.
+    Die Regelungen zur zentralen Dokumentation müssen allen Beteiligten bekannt gemacht werden.
+rs052:
+  title: Gewährleistung Versorgung der Krisenstabsmitglieder
+  anchor: gewahrleistung-versorgung-der-krisenstabsmitglieder
+  intro: |
+    Die Vorfallsbewältigung ist körperlich wie mental anstrengend und lässt den Beteiligten wenig Zeit für Erholung und Versorgung.
+    Um dennoch langfristig Arbeitsfähigkeit und -bereitschaft zu erhalten, sollte eine Grundversorgung der Mitglieder des Krisenstabs und der Notfallteams gewährleistet werden.
+rs054:
+  title: Erarbeitung von Interimsprozessen
+  anchor: erarbeitung-von-interimsprozessen
+  intro: |
+    Der Notbetrieb beschränkt sich auf die kritischen Geschäftsprozesse.
+    Zusätzlich können Interimsprozesse zur Unterstützung des Notbetriebs (z. B. Dokumentation von Zeiten und Aufwänden bei der Erbringung von Diesntleistungen, Dokumentation von Waren- oder Materialbewegungen) oder zur vorrübergehenden Ausrechterhaltung des weiteren Geschäftsbetriebs erforderlich sein.
+    Diese Interimsprozesse sollten unter Einbeziehung der betroffenen Geschäftsbereiche erarbeitet und umgesetzt werden.
+    Prozesse sollten so gestaltet werden, dass deren Umsetzung für einen Zeitraum von einigen Wochen tragbar ist.
+    Alle betroffenen Mitarbeiter müssen über die Vorgehensweise informiert werden, um die korrekte Umsetzung zu gewährleisten.
+rs055:
+  title: Bereitstellung benötigter Ressourcen
+  anchor: bereitstellung-benotigter-ressourcen
+  intro: |
+    Für die Umsetzung eines Notbetriebs werden häufig zusätzliche technische Ressourcen wie zum Beispiel Speicher oder Netzwerkkomponenten benötigt.
+    Sind nicht alle benötigten Ressourcen verfügbar, müssen diese kurzfristig, beispielsweise in Form von Leihhardware, beschafft werden.
+rs056:
+  title: Schrittweiser Aufbau des Notbetriebs
+  anchor: schrittweiser-aufbau-des-notbetriebs
+  intro: |
+    Der schrittweise Aufbau des Notbetriebs folgt der in [RS053](rp007.md#planung-des-notbetriebs) vorgenommenen Ablaufsplanung.
+    Zusätzlich sollte auf allen Systemen im Notbetrieb durch Einsatz eines EDRs und Live-Forensik-Software Sichtbarkeit hergestellt werden.
+  outro: |
+    Grundlegende Schritte zum Aufbau eines Notbetriebs:
+
+    - Einrichtung eines neuen Netzwerks / VLANs: Es dürfen keine Verbindungen zur kompromittierten Umgebung oder zur Umgebung für den Wiederaufbau bestehen!
+    Die Notbetriebsumgebung wird außerdem vom Internet getrennt und lediglich unbedingt notwendige Verbindungen explizit freigegeben.
+    - Vorbereitung notwendiger Server: Entweder neu aufsetzen **oder** temporär aus kompromittiertem Netz migrieren.
+    Bei der Neuinstallation werden alle nötigen Dienste und Anwendungen installiert und benötigte Daten migriert.
+    - Vorbereitung von Clients für den Zugriff: Entweder Nutzung von Reservesystemen **oder** Neubeschaffung **oder** Nutzung bestehender Systeme, welche neu installiert werden.
+    In jedem Fall müssen die Systeme aktualisiert und neue Zugänge eingerichtet werden.
+    - Sichtbarkeit herstellen: Alle Systeme im Notbetrieb werden zur Überwachung mit einem EDR ([RS059](#installation-edr)) und Live-Forensik-Software (siehe [RS021](rp002.md#technische-vorbereitung-der-detailanalyse)) ausgestattet.
+rs057:
+  title: Überprüfung und Anpassung der Stabsarbeit
+  anchor: uberprufung-und-anpassung-der-stabsarbeit
+  intro: |
+    Mit Fortschreiten der Vorfallsbewältigung und Stabilisierung der Lage, sollte die Arbeitsweise des Krisenstabs und der Notfallteams regelmäßig überprüft werden, um die Beteiligten nach Möglichkeit durch lagegerechte Anpassungen zu entlasten.
+rs058:
+  title: Wiederherstellung von Backups
+  anchor: wiederherstellung-von-backups
+  intro: |
+    Die Wiederherstellung von Backups erfolgt im gelben Netz.
+    Wiedergestellte Systeme müssen unmittelbar aktualisiert und gehärtet werden, um bestehende Sicherheitslücken zu schließen und eine erneute Kompromittierung zu verhindern.
+    Anschließend folgt die Installation eines EDR-Agenten ([RS059](#installation-edr)) zur Überwachung des Systems.
+rs059:
+  title: Installation EDR
+  anchor: installation-edr
+  intro: |
+    Mithilfe eines Endpoint Detection and Response Systems (EDR) können Prävention, Identifikation, Abwehr und Reaktion auf Angriffe jeglicher Art miteinander vereint werden.
+    Während der Vorfallsbewältigung kann ein EDR zur Überwachung wiederhergestellter Systeme verwendet werden und zudem die Überprüfung migrierter Daten unterstützen.
+    Alle neu installierten und wiederhergestellten Client- und Serversysteme werden mit einem EDR-Agenten ausgestattet, um eine flächendeckende Überwachung zu gewährleiten und eine erneute Kompromittierung zu verhindern.
+rs060:
+  title: Bereinigung Cloud
+  anchor: bereinigung-cloud
+  intro: |
+    Bei der Bereinigung der Cloud-Umgebung müssen veränderte oder manipulierte Einstellungen konsequent zurückgesetzt werden, um mögliche Persistenzmechanismen der Angreifer zu entfernen und die Integrität des Tenants wiederherzustellen.
+    Außerdem sollte die Umgebung durch die Aktivierung zentraler Sicherheitsmechanismen abgesichert werden, um zukünftige Angriffe zu verhindern.
+    Bevor die Maßnahmen zur Bereinigung umgesetzt werden, sollten kompromittierte Nutzerkonten bereits gesperrt und deren aktiven Sitzungen widerrufen worden sein ([RS032](rp003.md#umgang-mit-kompromittierten-nutzerkonten)).
+rs061:
+  title: Bereinigung kompromittierter Benutzerkonten
+  anchor: bereinigung-kompromittierter-benutzerkonten
+  intro: |
+    Bei der Kompromittierung eines Benutzerkontos ist davon auszugehen, dass der Angreifer über die Zugangsdaten des Benutzerkontos verfügt.
+    Es können Benutzerkonten kompromittiert werden, welche Zugriff auf verschiedene Anwendungen oder Systeme gewähren wie zum Beispiel E-Mail-Konto, AD-Konto, Cloud-Konto, VPN-Konto oder auf ein lokales Benutzerkonto auf einem System.
+    Kann der Verdacht einer Kompromittierung des Benutzerkontos nicht eindeutig widerlegt werden, ist im Zweifelsfall von einer Kompromittierung auszugehen.
+  outro: |
+    Zur Bereinigung und Wiederherstellung müssen dann die folgenden Maßnahmen getroffen werden:
+
+    - Passwort im Active Directory zweimal ändern (neues Passwort mit mindestens 14 Zeichen und drei verschiedene Zeichenarten).
+    - jegliche zuvor gesperrte Zugangsdaten bzw. Passwörter für z. B. VDI-Lösung, M365, VPN-Lösung, usw. ändern.
+    - Administrative Benutzerkonten einem Audit unterziehen: Sind die vorhandenen Benutzerkonten legitim und notwendig?
+
+    Zudem sollte – insbesondere für alle extern erreichbaren Anwendungen und Systeme z. B. VPN-Lösung, Remote-Access-Lösung – Multi-Faktor-Authentifizierung aktiviert werden ([RS062](#aktivierung-mfa)).
+    Die Bereinigung kompromittierter Cloud-Benutzer (z. B. M365) erfolgt wie in [RS060](rp012.md#bereinigung-cloud) beschrieben.
+rs062:
+  title: Aktivierung MFA
+  anchor: aktivierung-mfa
+  intro: |
+    Zum Schutz vor vielfältigen Angreifern ist eine Phishing-resistente Multi-Faktor-Authentifizierung (MFA) in Kombination mit einer Conditional-Access-Policy und einem ausgereiften Monitoring-System von entscheidender Bedeutung.
+    Dies gilt insbesondere für Anwendungen, die aus dem Internet erreichbar sind, sowie für VPN- und Cloud-Lösungen.
+    Insbesondere für administrative Benutzerkonten wird dringend empfohlen, MFA einzurichten und zu erzwingen.
+    Unabhängig davon wird die flächendeckende Einrichtung von MFA empfohlen, sofern dies technisch möglich ist.
+    Auf Ausnahmen sollte hierbei grundsätzlich verzichtet werden.
+rs063:
+  title: Definition Kommunikationsgrundlagen
+  anchor: definition-kommunikationsgrundlagen
+  intro: |
+    Als Grundlage für interne und externe Kommunikation müssen eine Kommunikationsstrategie und allgemeine Sprachregelungen definiert werden.
+    Auf diese Weise wird die einheitliche Komunikation gewährleistet.
+    Die Wahl der Kommunikationsstrategie ist in erster Linie für die externe Kommunikation von Bedeutung, sie bildet jedoch die Grundlage für die allgemeinen Sprachregelungen, welche auch in der internen Kommunikation angewendet und intern bekannt gemacht werden sollten.
+rs064:
+  title: Identifizierung interner Zielgruppen
+  anchor: identifizierung-interner-zielgruppen
+  intro: |
+    Wichtigste interne Zielgruppe bilden in der Regel die Mitarbeiter einer Organisation.
+    Darüber hinaus können interne Betriebsräte, Führungskräfte oder interne Gremien relevante Zielgruppen sein, welche separat von anderen Beschäftigten informiert werden müssen.
+    Welche internen Zielgruppen zu informieren sind, muss situationsbhängig geprüft werden.
+rs065:
+  title: Wahl von Kommunikationskanälen
+  anchor: wahl-von-kommunikationskanalen
+  intro: |
+    Um die in [RS064](rp009.md#identifizierung-interner-zielgruppen) und [RS080](rp010.md#identifizierung-externer-zielgruppen) identifizierten, relevanten Zielgruppen zu erreichen, muss die Kommunikation über geeignete Kanäle erfolgen.
+    Geeignet sind Kommunikationskanäle, über die ein konstanter Informationsfluss gewährleistet werden kann und die für die jeweilige Zielgruppe leicht zugänglich sind.
+    Bei der Wahl der Kommunikationskanäle müssen mögliche vorfallsbedingte technische Beeinträchtigungen berücksichtigt werden.
+rs066:
+  title: Erste Information der Mitarbeiter
+  anchor: erste-information-der-mitarbeiter
+  intro: |
+    Infolge eines schwerwiegenden IT-Sicherheitsvorfalls ist die Arbeitsfähigkeit unter Umständen stark eingeschränkt.
+    Daher werden viele Fragen seitens der Mitarbeiter aufkommen.
+    Rückfragen können durch schnelle, proaktive Kommunikation reduziert werden.
+    Neben der Information über den Vorfall, sollten Mitarbeiter über die festgelegten Sprachregelungen in Kenntnis gesetzt und bezüglich der Weitergabe von Informationen sensibilisiert werden.
+rs067:
+  title: Förderung internen Austauschs und Meinungsbildung
+  anchor: forderung-internen-austauschs-und-meinungsbildung
+  intro: |
+    Nach der ersten Information werden unter den Mitarbeitern weitere Fragen zum Vorfall und dem weiteren Vorgehen aufgekommen.
+    Zudem kann kaum verhindert werden, dass intern kommunizierte Informationen zur Lage nach außen gelangen.
+    Stattdessen können durch geeignete Plattformen und aktuelle Informationen Austausch und Meinungsbildungsbildung unter den Mitarbeitern positiv beeinflusst werden, um Spekulationen und Gerüchte zu vermeiden.
+rs068:
+  title: Regelmäßige Aktualisierung der Informationen für Mitarbeiter
+  anchor: regelmaige-aktualisierung-der-informationen-fur-mitarbeiter
+  intro: |
+    Die intern bereitgestellten Informationen müssen regelmäßig aktualisiert werden.
+    Dabei sollte Informationsfluss konstant gehalten werden, auch wenn die Aktualisierung darin besteht, dass es keine Aktualisierung gibt.
+    Ein Mangel an rechtzeitiger Kommunikation kann als Zeichen für schlechte Nachrichten gewertet werden und zu unnötigen Nachforschungen oder Spekulationen über den aktuellen Stand oder die Schwere eines Vorfalls führen.
+rs069:
+  title: Planung der Verhandlungsstrategie
+  anchor: planung-der-verhandlungsstrategie
+  intro: |
+    Die sorgfältige Planung der Verhandlungsstrategie ist entscheidend, um Risiken zu minimieren und die Kontrolle über den Prozess zu behalten.
+    Zunächst müssen alle relevanten Informationen gesammelt werden.
+    Dazu gehören Art der Ransomware, betroffene Systeme, Forderungshöhe, Zahlungsmodalitäten und mögliche rechtliche Einschränkungen.
+    Parallel dazu ist die Abstimmung mit internen Stakeholdern sowie externen Partnern wie Incident-Response-Dienstleister und gegebenenfalls Strafverfolgungsbehörden erforderlich.
+    Die Strategie sollte zudem klare Ziele definieren – etwa Zeitgewinn, Reduktion der Lösegeldsumme oder Sicherstellung der Datenwiederherstellung – und verschiedene mögliche Szenarien berücksichtigen, einschließlich der Option, nicht zu zahlen.
+rs070:
+  title: Ernennung Verhandlungsführer
+  anchor: ernennung-verhandlungsfuhrer
+  intro: |
+    Es sollte eine Person als Verhandlungsführer und *Single Point of Contact* für die Verhandlung ernannt werden.
+rs071:
+  title: Kontaktaufnahme mit dem Angreifer
+  anchor: kontaktaufnahme-mit-dem-angreifer
+  intro: |
+    Die erste Kontaktaufnahme des Verhandlungsführers bestimmt den Ton für den gesamten Verhandlungsprozess.
+    Es ist von entscheidender Bedeutung, eine prägnante, professionelle und höfliche Botschaft zu verfassen.
+    Das Hauptziel der ersten Nachricht besteht darin, den Kontakt herzustellen, sich nach der Lösegeldforderung zu erkundigen und Vertrauen aufzubauen.
+    Außerdem kann die erste Kontaktaufnahme genutzt werden, um weitere Informationen über die Angreifer zu sammeln, bevor erste Vorschläge oder Angebote gemacht werden.
+rs072:
+  title: Proof of Life
+  anchor: proof-of-life
+  intro: |
+    Ein *Proof of Life* kann verschiedenen Zwecken dienen.
+    Mit dem Schritt soll verifiziert werden, ob die Angreifer wirklich Daten exfiltriert haben und über ein Entschlüsselungstool verfügen.
+rs073:
+  title: Test des Entschlüsselungstools
+  anchor: test-des-entschlusselungstools
+  intro: |
+    Die Funktionsfähigkeit des Entschlüsselungstools sollte zunächst in einer isolierten Umgebung getestet werden.<br><br>
+    %warning% **Achtung:** Das Werkzeug sollte niemals im sauberen (grünen) Netz ausgeführt werden.
+rs074:
+  title: Abschluss der Verhandlungen
+  anchor: abschluss-der-verhandlungen
+  intro: |
+    Wenn der Angreifer einem Preis zustimmt und die Lösegeldzahlung intern beschlossen wurde, ist es wichtig, die Verhandlungen ordnungsgemäß abzuschließen.
+    Dazu sollten Lösegeldsumme, Zahlungsart und Zeitrahmen festgelegt und die Rahmenbedingungen von den Angreifern schriftlich bestätigt werden.
+rs075:
+  title: Beschaffung des Zahlungsmittels
+  anchor: beschaffung-des-zahlungsmittels
+  intro: |
+    Bei der Beschaffung des vereinbarten Zahlungsmittels sollten bereits mögliche Wertschwankungen von Kryptowährungen und Transaktionsgebühren berücksichtigt und eine entsprechender Reservebetrag eingeplant werden.
+    Weiterhin ist zu berücksichtigen, dass bei Krypto-Börsen und Banken bei der Einzahlung größerer Summen einen Mittelherkunftsnachweis verlangen.
+    Daher muss geprüft werden, welche Nachweisepflichten bestehen und wie diesen nachgekommen werden kann.
+rs076:
+  title: Überprüfung des Zahlungswegs durch Testüberweisung
+  anchor: uberprufung-des-zahlungswegs-durch-testuberweisung
+  intro: |
+    Zahlungen mit Kryptowährungen können nicht rückgängig gemacht werden!
+    Der Zahlungsweg sollte daher vor der Überweisung des Lösegelds durch eine Testtransaktion überprüft werden.
+    Dazu wird ein geringer Betrag an den Empfänger gesendet.
+rs077:
+  title: Veranlassung der Lösegeldzahlung
+  anchor: veranlassung-der-losegeldzahlung
+  intro: |
+    Der Wert von Kryptowährungen kann innerhalb kurzer Zeit stark schwanken.
+    Um das Risiko für Kursschwankungen zu minimieren, sollte die Zahlung nach dem Abschluss der Verhandlung ([RS074](rp011.md#abschluss-der-verhandlungen)) möglichst schnell ausgeführt werden.<br><br>
+    %warning% **Achtung:** Zahlungen mit Kryptowährungen können nicht rückgängig gemacht werden! Der Zahlungsweg sollte daher vor der Überweisung des Lösegelds durch eine Testtransaktion überprüft werden ([RS076](rp011.md#uberprufung-des-zahlungswegs-durch-testuberweisung)).
+rs078:
+  title: Abschluss des Vorgangs
+  anchor: abschluss-des-vorgangs
+  intro: |
+    Im Anschluss an die Lösegeldzahlung ([RS077](rp011.md#veranlassung-der-losegeldzahlung)) sollte eine klare Bestätigung eingefordert werden, dass die Zahlung eingegangen ist, alle exfiltrierten Daten gelöscht wurden und keine Kopien zurückbleiben.
+    Diese Zusicherung sollte dokumentiert werden, auch wenn sie technisch nicht vollständig überprüfbar ist.
+    Parallel dazu sollten die Angreifer das Entschlüsselungstool sowie die notwendigen Schlüssel bereitstellen, um den Zugriff auf die betroffenen Systeme wiederherzustellen.
+rs079:
+  title: Dokumentation der Verhandlung und der Ergebnisse
+  anchor: dokumentation-der-verhandlung-und-der-ergebnisse
+  intro: |
+    Der Verhandlungsverlauf sowie die Ergebnisse der Verhandlungen sollten genau dokumentiert werden.
+    In die Dokumentation sollten außerdem alle Informationen zu den Angreifern, die im Verlauf der Verhandlungen gesammelt werden konnten, aufgenommen werden.
+    Dabei sollte erkennbar gemacht werden, ob es sich bei der jeweiligen Notiz, um eine Beobachtung, Analyse, Hypothese oder Maßnahme handelt.
+rs080:
+  title: Identifizierung externer Zielgruppen
+  anchor: identifizierung-externer-zielgruppen
+  intro: |
+    Externe Zielgruppen umfassen alle Interessensgruppen, welche nicht Bestandteil der Organisation sind.
+    Das betrifft konkret Presse- und Medienvertreter, Kunden, Geschäftspartner, Behörden und die allgemeine Öffentlichkeit.
+    Je nach Art der Organisation können weitere weitere Zielgruppen relevant sein.
+    Welche Zielgruppen im Zuge der externen Kommunikation adressiert werden müssen, muss situtionsbasiert geprüft werden.
+rs081:
+  title: Benennung Sprecher und Stellvertreter für die Öffentlichkeitsarbeit
+  anchor: benennung-sprecher-und-stellvertreter-fur-die-offentlichkeitsarbeit
+  intro: |
+    Die Verantwortung für die Rolle des Hauptsprechers sollte klar zugewiesen werden.
+    Oft ist es am besten, eine einzige Person mit dieser Rolle zu betrauen, um einen einheitlichen Ton und Stil zu gewährleisten.
+    Die Einbindung mehrerer Sprecher kann zu Unklarheiten und verwirrenden Unterschieden in der Nachrichtenübermittlung führen.
+    Als Sprecher kann zum Beispiel eine Führungskraft oder ein PR-Vertreter benannt werden.
+    Außerdem sollte von vornherein ein Stellvertreter festgelegt werden.
+    Die Rollenbesetzung des Sprechers sowie dessen Stellvertreters gilt für die Dauer der Vorfallsbehandlung und sollte nicht verändert werden.
+rs082:
+  title: Erstellung von Vorlagen für Pressemitteilungen
+  anchor: erstellung-von-vorlagen-fur-pressemitteilungen
+  intro: |
+    Durch die Nutzung von Vorlagen und Textbausteinen wird ein einheitlicher Stil in der Kommunikation gewährleistet.
+    Darüber hinaus kann die Kommunikation auf diese Weise beschleunigt werden, da bei Veränderungen der Lage nicht über Formulierungen und Grundbotschaft entschieden werden muss, sondern lediglich vereinzelte Informationen angepasst werden müssen.
+    Die %resikommunikation% enthält Text- und Formulierungsvorschläge, welche als Grundlage zur Ausarbeitung von Vorlagen verwendet werden können.<br>
+    **%warning% Achtung:** Die Handreichung und alle darin enthaltenen Vorschläge beziehen sich auf IT-Sicherheitsvorfälle in **kommunalen Einrichtungen** und müssen auf Ihre Organisation und den Vorfall angepasst werden!
+rs083:
+  title: Veröffentlichung einer ersten Meldung
+  anchor: veroffentlichung-einer-ersten-meldung
+  intro: |
+    Die Herausgabe einer ersten öffentlichen Meldung über den Vorfall sollte frühestens zeitgleich mit der ersten Information der Mitarbeiter [RS066](rp009.md#erste-information-der-mitarbeiter) erfolgen.
+    Um eine widerspruchsfreie und einheitliche Kommunikation zu erreichen, sollten vorbereitete Vorlagen ([RS082](rp010.md#erstellung-von-vorlagen-fur-pressemitteilungen)) verwendet werden.
+rs084:
+  title: Aktivierung Darksites
+  anchor: aktivierung-darksites
+  intro: |
+    Darksites bilden eine Möglichkeit der direkten Kommunikation mit externen Zielgruppen.
+    Durch die Nutzung bereits etablierter Kommunikationskanäle wie Internet- oder Social-Media-Auftritte der Organisation können verschiedene Zielgruppen angesprochen und zugleich eine große Reichweite erzielt werden.
+    Eine Darksite für den Internetauftritt der Organisation sollte idealerweise im Zuge der Ausarbeitung eines Kommunikationsplans bereits vorbereitet worden sein und wird lediglich um vorfallsspezifische Informationen ergänzt und aktiviert.
+    Im Sinn einer einheitlichen Kommunikation sollte der Inhalt der ersten öffentlichen Meldung ([RS083](#veroffentlichung-einer-ersten-meldung)) entsprechen.
+rs085:
+  title: Einrichtung Medienmonitoring
+  anchor: einrichtung-medienmonitoring
+  intro: |
+    Um, falls notwendig, schnellstmöglich auf Medienberichte reagieren zu können, sollte die mediale Berichterstattung bezüglich des Schadensereignisses ständig verfolgt werden.
+    Neben dem Schutz der eigenen Reputation dient ein Medienmonitoring außerdem der fortlaufenden Überprüfung der eigenen Kommunikationsstrategie und ermöglicht so, zeitnah auf neue Entwicklungen und Behauptungen zu reagieren und die Kommunikation daran anzupassen.
+    Ein Medienmonitoring sollte sowohl die Berichterstattung der Presse als auch Meldungen zum Vorfall in sozialen Netzwerken umfassen.
+rs086:
+  title: Einrichtung von Dialogmöglichkeiten
+  anchor: einrichtung-von-dialogmoglichkeiten
+  intro: |
+    Externen Ziel- und Interessensgruppen sollte die Möglichkeit gegeben werden, sich selbstständig über den Vorfall zu informieren.
+    Dazu können zum Beispiel zielgruppenspezifische Frage-Antwort-Kataloge erstellt werden.
+    Darüber hinaus können Kunden und Geschäftspartner einen erhöhten Informationsbedarf haben.
+    Um diesem gerecht zu werden und dabei eine einheitliche Kommunikation zu gewährleisten, sollten zentrale Kontaktstellen eingerichtet werden.
+rs087:
+  title: Fortlaufende Kommunikation
+  anchor: fortlaufende-kommunikation
+  intro: |
+    Die bereitgestellten informationen sollten regelmäßig aktualisiert werden, auch wenn die Aktualisierung darin besteht, dass es keine Aktualisierung gibt.
+    Ein Mangel an rechtzeitiger Kommunikation kann als Zeichen für schlechte Nachrichten gewertet werden und zu unnötigen Nachforschungen oder Spekulationen über den aktuellen Stand oder die Schwere eines Vorfalls führen, daher sollte Funkstille vermieden werden.
+rs088:
+  title: Ernennung Projektleitung
+  anchor: ernennung-projektleitung
+  intro: |
+    Der sichere Wieder- und Neuaufbau der Infrastruktur ist ein Projekt mit einer Vielzahl von Arbeitssträngen und Abhängigkeiten, das mehrere Wochen bis Monate in Anspruch nimmt und sich über die akute Phase der Vorfallsbewältigung hinaus zieht.
+    Zur Koordination und Nachverfolgung des gesamten Prozesses und seines Fortschritts wird ein Projektleiter ernannt.
+rs089:
+  title: Planung Übergang von Notbetrieb zu Regelbetrieb
+  anchor: planung-ubergang-von-notbetrieb-zu-regelbetrieb
+  intro: |
+    Der Wechsel vom Notbetrieb zum Regelbetrieb erfordert mehr als die technische Wiederherstellung der Systeme.
+    Beispielsweise müssen im Notbetrieb entstandenen Daten in die neue Umgebung migriert sowie unterstützende Interimsprozesse nachträglich digital dokumentiert werden, um Compliance und Nachvollziehbarkeit zu gewährleisten.
+    Vor der Umschaltung ist eine Sicherheitsfreigabe zwingend erforderlich.
+    Offene Vorgänge aus dem Notbetrieb sind zu synchronisieren, damit keine Informations- oder Prozesslücken entstehen.
+    Zudem sollte die Rückkehr zum Regelbetrieb von klarer Kommunikation an alle Beteiligten begleitet werden.
+    Diese Aspekte sollten vor dem Übergang von Not- zu Regelbetrieb geplant werden.
+rs090:
+  title: Reihenfolge des Wiederaufbaus
+  anchor: reihenfolge-des-wiederaufbaus
+  intro: |
+    Vor Beginn wird zunächst die Reihenfolge des Wiederaufbaus festgelegt.
+    Die Priorisierung ergibtsollte sich aus der Geschäftskritikalität.
+    Zuerst sollten die Kerndienste des IT-Verbundes wiederhergestellt werden.
+    Sobald diese erfolgreich eingerichtet und betriebsbereit sind, können die restlichen Server, weitere Netzwerkkomponenten konfiguriert und Workstations eingerichtet werden. 
+rs091:
+  title: Einteilung Streams
+  anchor: einteilung-streams
+  intro: |
+    Für den strukturierten Wiederaufbau werden Mitarbeiter verschiedene Streams (Arbeitsgruppen) eingeteilt.
+  outro: |
+    Typische Streams und einige Beispielfragestellungen des Wiederaufbaus sind:
+  outro_extent_card_left: |
+    - **Active Directory**
+
+        - Tiering einführen?
+        - Wie werden Rechte aus alter Umgebung importiert?
+
+    - **Virtualisierung**
+
+        - Gibt es ausreichend Hardware für die Hypervisor?
+        - Storage
+
+    - **Netzwerk**
+
+        - Netzwerk-Segmentierung planen
+        - Firewall-Regeln planen
+  outro_extent_card_right: |
+    - **Backup/Restore**
+
+        - Wiederherstellung der Backups
+        - Abstimmung mit Forensik für Prozess und Analyse
+        - Abstimmung mit Storage für Speicherort
+
+    - **Cloud-Dienste**
+
+        - Welche Cloud-Dienste gibt es?
+        - Gibt es eine Synchronisation mit lokalen Systemen?
+        - Gibt es hybride Systeme?
+
+    - **Anwendungen**
+
+        - Welche Anwendungen gibt es?
+        - Welche Abhängigkeiten gibt es?
+        - Wird Unterstützung von Dienstleistern benötigt?
+        - Wer sind die Ansprechpartner für die Anwendungen?
+        - Auf welchen Systemen laufen die Anwendungen?
+rs092:
+  title: Unterstützung durch Dienstleister
+  anchor: unterstutzung-durch-dienstleister
+  intro: |
+    Gegenenfalls sollten externe Dienstleister zur Unterstützung hinzugezogen werden, um im Zuge des Wiederaufbaus Maßnahmen zur nachhaltigen Absicherung der neuen Infrastruktur umzusetzen.
+    Um den Unterstützungsbedarf zu ermitteln, sollte zunächst geprüft werden, ob ausreichend personelle Ressourcen und fachliche Kompetenzen vorhanden sind, um die in [RS091](#einteilung-streams) eingeteilten Streams und die damit zusammenhängenden Fragestellungen abzudecken.
+rs093:
+  title: Abschlussbericht
+  anchor: abschlussbericht
+  intro: |
+    Der Abschlussbericht des IR-Dienstleisters beinhaltet alle relevanten Informationen zum Vorfall und dessen Behandlung.
+    Vorgehensweise sowie Ergebnisse der Analyse werden detailliert beschrieben.
+    Darüber hinaus enthält der Abschlussbericht häufig Empfehlungen zur Erhöhung der Sicherheit.
+    Der Bericht ist deshalb wichtig für die Nachbereitung des Vorfalls.
+    Weiterhin kann der Bericht für Dritte, beispielsweise Versicherung oder Ermittlungsbehörden von Relevanz sein.
+    Aufgrund dieser Wichtigkeit, sollte sorgfältig geprüft werden, ob der Bericht alle Fragen zum Vorfall beantwortet.
+rs094:
+  title: Abschlussgespräch mit IR-Dienstleister
+  anchor: abschlussgesprach-mit-ir-dienstleister
+  intro: |
+    Im Abschlussgespräch können letzte Fragen und Unklarheiten zum Vorfallsbericht geklärt werden.
+    In Vorbereitung auf das Gespräch sollte daher ungebdingt die Prüfung des Abschlussberichts erfolgt sein.
+rs095:
+  title: Umsetzung der Empfehlungen aus dem Abschlussbericht
+  anchor: umsetzung-der-empfehlungen-aus-dem-abschlussbericht
+  intro: |
+    Der Abschlussbericht enthält Empfehlungen für technische und organisatorische Maßnahmen, welche die allgemeine Sicherheit erhöhen und die Detektion und Bewältigung von Sicherheitsvorfällen unterstützen.
+    Diese Empfehlungen sollten gründlich geprüft werden, um über deren Umsetzung zu entscheiden.
+rs096:
+  title: Lessons Learned
+  anchor: lessons-learned
+  intro: |
+    Zur internen Aufarbeitung des Vorfalls und der Vorfallsbewältigung sollte ein Lessons Learned Workshop durchgeführt werden.
+    Dieser Workshop sollte zeitnah nach Abschluss des Vorfalls angesetzt werden, damit die Geschehnisse allen Beteiligten noch präsent sind.
+    Es kann sinnvoll sein, zwei Termine für das Lessons Learned anzusetzen, um zunächst im kleineren Kreis (IT-Notfallstab) Themen der IT ausführlich diskutieren zu können und diese später in der gesamtorganisatorischen Aufarbeitung unter Teilnahme des gesamten Krisenstabs und der Organisationsführung aufzugreifen, ohne sich dabei in technischen Details zu verlieren.
+  outro: |
+    Folgende Fragen unterstützen die Aufarbeitung des Vorfalls:
+
+    - Was waren Ursachen und Auslöser des Vorfalls?
+    - Mit welchen Maßnahmen wurde darauf reagiert?
+    - Erzielten die Maßnahmen den gewünschten Effekt?
+    - War die Vorbereitung angemessen?
+    - Welche Abläufe sollten angepasst werden?
+    - Welche Strukturen sollten angepasst werden?
+rs097:
+  title: Organisation der Krisenstabsarbeit
+  anchor: organisation-der-krisenstabsarbeit
+  intro: |
+    Der Krisenstab ist ein planendes, koordinierendes, informierendes, beratendes und unterstützendes Organ.
+    Er stellt eine besondere temporäre Aufbauorganisation dar, die die normale Aufbauorganisation zur Bewältigung eines Notfalls durchbricht und abteilungsübergreifende Kompetenzen bündelt.
+    Um im Krisenfall eine schnelle einberufung des Krisenstabs zu ermöglichen, sollte vorab definiert werden, wer welche Position darin übernimmt.
+    Die Positionen im Krisenstab müssen auf die eigene Organisation angepasst werden.
+    Jede Rolle sollte durch mindestens eine Person aus der Organisation besetzt werden.
+    Um die Ausfallsicherheit des Krisenstabs zu gewährleisten, sollte außerdem jeweils ein Stellvertreter benannt werden.
+    Neben der Besetzung des Krisenstabs können bereits weitere Rahmenbedingungen für dessen Arbeit im Notfall definiert werden.
+rs098:
+  title: Deinstallation Incident-Tooling
+  anchor: deinstallation-incident-tooling
+  intro: |
+    Wurde im Verlauf der Vorfallsbewältigung Software-Tooling ausgebracht, ist dieses zum Projektende wieder zu entfernen.
+    Dazu muss zunächst geprüft werden, auf welchen Systeme entsprechende Software zum Einsatz gekommen ist und welche Artefakte in diesem Zusammenhang zu entfernen sind.
+    Die Deinstalltion der Software-Tools kann teilweise durch den beteiligten Dienstleister erfolgen, daher ist die Deinstalltion mit diesem abzustimmen.
+rs099:
+  title: Abschließende Meldung
+  anchor: abschlieende-meldung
+  intro: |
+    Einige Meldepflichten umfassen neben der initialen Meldung des Vorfalls bei dessen Bekanntwerden auch eine Abschlussmeldung.
+    Daher ist zu prüfen, ob eine solche Meldung bei den entsprechenden Stellen abzugeben ist.
+    Außerdem können Meldestellen aktiv weitere Informationen zum Vorfall einfordern.
+rs100:
+  title: Koordination der Kommunikation
+  anchor: koordination-der-kommunikation
+  intro: |
+    Interne und externe Kommunikation müssen aufeinander abgestimmt werden.
+    Das betrifft sowohl die kommunizierten Inhalte, als auch die zeitliche Abfolge.
+    Scheinbar nachrangige Information interner Interessensgruppen kann negativen Einfluss auf die Bemühung Angestellter zur Mitarbeit an der Vorfallsbewältigung haben, daher sollten Inhalte, die extern kommuniziert werden, grundsätzlich mindestens zeitgleich oder eher intern kommuniziert werden.
+rs101:
+  title: Übernahme Kommunikationsgrundlagen
+  anchor: ubernahme-kommunikationsgrundlagen
+  intro: |
+    Kommunikationsgrundlagen wie die allgemeine Kommunikationsstrategie sowie Sprachregelungen für die Kommunikation im Zusammenhang mit dem Vorfall wurden in [RS063](rp009.md#definition-kommunikationsgrundlagen) bereits definiert.
+    Um intern wie extern einheitlich zu kommunizieren, werden die getroffenen Regelungen für die externe Kommunikation übernommen.
+rs102:
+  title: Einrichtung IR-Netzwerkumgebung
+  anchor: einrichtung-ir-netzwerkumgebungen
+  intro: |
+    Die vorrübergehende Einrichtung verschiedener Incident Response Netzwerkumgebungen dient der Isolation, Wiederherstellung und Überwachung der IT-Systeme nach einem Sicherheitsvorfall.
+    Sie ersetzt kein vollständiges Netzwerkkonzept für infizierte Umgebungen oder deren sicheren Neuaufbau.
+    Um die betroffenen Systeme sicher zu behandeln, sind mindestens die drei Netzwerkbereiche (rot, gelb und grün) erforderlich, die jeweils durch Firewalls terminiert werden müssen.
+    Zum Aufbau der Umgebung kann vorhandene Netzwerk-Hardware verwendet werden.
+    Dazu werden zunächst alle Log-Daten und Konfigurationen von Firewalls und Netzwerkkomponenten exportiert und extern gesichert und anschließend die Netzwerkgeräte auf Werkseinstellungen zurückgesetzt.
+    Danach müssen alle benutzernamen und Passwörter der netzwerkgeräte geändert werden, bevor die gesicherten Konfigurationen installiert und überprüft werden.
+    Schließlich erfolgt die Konfiguration der unten genannten Netzwerke.
+  outro: |
+    - %compromised% **rotes Netzwerk / COMPROMISED <br> – das kompromittierte / betroffene Netzwerk**
+
+        ---
+
+        - Das Netz beinhaltet alle kompromittierten Systeme.
+        - Systeme sollten voneinander isoliert sein.
+        - Das Netzwerk sollte vom Internet getrennt sein.
+        - Notwendige Verbindungen (z. B. für Remote-Forensik) werden durch einzelne Firewall-Freischaltungen freigegeben.
+        - Systeme, die unverändert zu übernehmen sind, werden im roten Netz überprüft.
+        - Es bestehen keine Verbindungen zum gelben oder grünen Netz.
+
+    - %monitoring% **gelbes Netzwerk / TRANSITION <br> – das Überprüfungs- / Monitoring-Netzwerk**
+
+        ---
+
+        - Das Netzwerk sollte vom Internet getrennt sein.
+        - Notwendige Verbindungen (z. B. für Remote-Forensik) werden durch einzelne Firewall-Freischaltungen freigegeben.
+        - Im gelben Netz erfolgt die Überprüfung von wiederhergestellten Systemen aus den Backups.
+        - Überprüfte Systeme verbleiben für eine zu definierende Frist im gelben Netz in Quarantäne.
+        - Es sollten alle Möglichkeiten des Monitorings und der Sichtbarkeit eingesetzt werden.
+        - Es bestehen keine Verbindungen zum roten oder grünen Netz.
+
+    - %clean% **grünes Netzwerk / CLEAN <br> – das neue produktive Netzwerk**
+
+        ---
+
+        - Systeme, die neuaufgesetzt werden, werden hier erstellt.
+        - Überprüfte Systeme aus dem gelben Netz werden erst nach Freigabe in das grüne Netz überführt.
+        - Das grüne Netz sollte keine kompromittierten Systeme enthalten.
+        - Der Zugang zum Netzwerk wird durch Firewall-Regeln beschränkt
+        - Internetzugang, Services und Ports werden zunächst auf ein Minimum reduziert.
+        - Es bestehen keine Verbindungen zum roten oder gelben Netz.
+rs103:
+  title: Organisation des Datenaustauschs mit Dienstleistern
+  anchor: organisation-des-datenaustauschs-mit-dienstleistern
+  intro: |
+    Wie auch beim internen Datenaustausch sollte der Austausch von Daten mit externen Dienstleistern über eine zentrale Plattform erfolgen.
+rs104:
+  title: Migration EDR-Instanz
+  anchor: migration-edr-instanz
+  intro: |
+    Kam im Zuge der Vorfallsbehandlung ein EDR (z. B. SentinelOne) zur Überwachung der Umgebung zum Einsatz, welches zukünftig weiter betrieben werden soll, werden die Systeme von der für die Vorfallsbewältigung genutzten Instanz in die Instanz zur dauerhaften Nutzung migriert.
+    Wenn keine weitere Nutzung des EDRs geplant ist, erfolgt die Deinstallation der EDR-Agenten gemäß [RS098](../response_phases/rp015.md#deinstallation-incident-tooling).
+rs105:
+  title: Aufhebung temporärer Veränderungen
+  anchor: aufhebung-temporarer-veranderungen
+  intro: |
+    Nach Abschluss des Wiederaufbaus können die vorübergehenden Veränderungen in der Infrastruktur aufgehoben werden.
+    Diese Aufhebung erfolgt zum Teil schrittweise durch die Freigabe einzelner IT-Systeme und Anwendungen.
+    Dazu gehört die Aufhebung der Isolation und die Abwicklung der IR-Netzwerkumgebung.
+    Diese Schritte werden kontrolliert und in Abstimmung mit den Sicherheitsfreigaben durchgeführt, da Systeme erst nach vollständiger Wiederherstellung und Prüfung wieder integriert werden dürfen.
+    Ziel ist es, die reguläre Infrastruktur und Kommunikationswege wiederherzustellen, ohne die erreichte Sicherheitsstabilität zu gefährden.
+rs106:
+  title: Neuinstallation von Serversystemen
+  anchor: neuinstallation-von-serversystemen
+  intro: |
+    Die vollständige Neuinstallation ohne Datenübernahme kann im grünen Netz stattfinden.
+    Nach Abschluss der Neuinstallation folgt die Installation eines EDR-Agenten ([RS059](#installation-edr)) zur Überwachung des Systems.
+    Sollen Systeme aus einem Backup wiederhergestellt werden und / oder Daten aus der kompromittierten Umgebung migriert werden, wird wie in [RS058](rp012.md#wiederherstellung-von-backups) beschrieben vorgegangen.
+rs107:
+  title: Neuinstallation von Clients
+  anchor: neuinstallation-von-clients
+  intro: |
+    Potenziell kompromittierte Clients sollten zunächst nicht weiter genutzt werden.
+    Da ein vollständiger Neukauf aller benötigten Client-Systeme in der Praxis meist aus finanziellen oder organisatorischen Gründen nicht möglich ist, sollten die Systeme von Grund auf neuinstalliert werden.
+    Alle neuen Clients werden unmittelbar nach der Installation mit einem EDR-Agenten ausgestattet ([RS059](#installation-edr)), um eine flächendeckende Überwachung zu gewährleiten und eine erneute Kompromittierung verhindern.
+rs108:
+  title: Erklärung Vorfallsabschluss
+  anchor: erklarung-vorfallsabschluss
+  intro: |
+    Der Krisenstabsleiter erklärt den Vorfall für abgeschlossen.
+    Nachbereitende Maßnahmen sowie Teile des Wiederaufbaus müssen zu diesem Zeitpunkt nicht abgeschlossen sein.
+    Der Vorfallsabschluss sollte an alle Mitarbeiter kommuniziert und von einem Dank für die tatkräftige Unterstützung bei der Vorfallsbewältigung begleitet werden.
+rs109:
+  title: Datenentschlüsselung mittels gekauftem Decryptor
+  anchor: datenentschlusselung-mittels-gekauftem-decryptor
+  intro: |
+    Wurde ein Decryptor gekauft, erfolgt dessen Anwendung und die Entschlüsselung der Daten im isolierten roten Netz.
+    Es darf keine Netzwerkkommunikation in andere Umgebungen stattfinden.
+    Der Decryptor sollte zuvor unbedingt getestet werden ([RS073](rp011.md#test-des-entschlusselungstools)).<br><br>
+    %warning% **Achtung:** Das Werkzeug sollte niemals im sauberen (grünen) Netz ausgeführt werden.
+rs110:
+  title: Umgang mit Mitarbeitern
+  anchor: umgang-mit-mitarbeitern
+  intro: |
+    Durch die technischen Einschränkungen, die aus dem Vorfall und dessen Eindämmung entstehen, wird die Arbeitsfähigkeit verschiedener Bereiche möglicherweise stark eingeschränkt.
+    Es muss überprüft werden, welche Einschränkungen bestehen und inwieweit verschiedene Bereiche arbeitsfähig sind.
+    Unter Umständen sind einige Mitarbeiter aufgrund der Einschränkungen gar nicht arbeitsfähig.
+    Es kann sinnvoll sein, vereinzelte geeignete Mitarbeiter im Zuge der Vorfallsbewältigung anderweitig einzusetzen, jedoch muss über den grundsätzlichen Umgang mit Mitarbeitern, welche vorübergehend nicht beschäftigt werden können entschieden werden.
+    Besteht ein Betriebs- oder Personalrat, sollte dieser in die Entscheidung einbezogen werden.
+rs111:
+  title: Initiierung von Folgemaßnahmen
+  anchor: initiierung-von-folgemanahmen
+  intro: |
+    Notwendige Anpassungen in der Vorfallsbewältigung, die im Zuge des Lessons Learned Workshops ([RS096](#lessons-learned)) erarbeitet wurden, sollten möglichst zeitnah umgesetzt werden, um zukünftige Sicherheitsvorfälle und deren Bewältigung vorzubereiten.
+    Dazu müssen die notwendigen Maßnahmen priosiert und beauftragt werden.
+    Dabei sollten konkrete Aufgaben, Zuständigkeiten sowie Zeithorizonte definiert werden, um im weiteren Verlauf die Umsetzung der Maßnahmen überprüfen zu können.

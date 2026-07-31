@@ -1,0 +1,7 @@
+mkdocs
+mkdocs-material
+mkdocs-macros-plugin
+mkdocs-glightbox
+mkdocs-static-i18n
+markdown-include
+pymdown-extensions
