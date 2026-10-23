@@ -8,7 +8,7 @@ hide:
 
 
 
-## R3SPOND Matrix
+## {{ translate('index.matrix_headline') }}
 <p>
 <!DOCTYPE html>
 <html lang="de">
@@ -62,7 +62,7 @@ hide:
 </html>
 </p>
 
-## R3SPOND Prozess
+## {{ translate('index.flowchart_headline') }}
 
 <figure markdown="span">
   <img src="{{ translate('index.flowchart') }}" usemap="#map_flowchart">

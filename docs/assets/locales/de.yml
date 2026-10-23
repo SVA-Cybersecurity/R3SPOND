@@ -50,12 +50,14 @@ links:
 documents: !include de/documents.yaml
 response_phases: !include de/response_phases.yaml
 index:
+  matrix_headline: R3SPOND Matrix
   description: |
       R3SPOND steht für *Readiness, Response and Recovery – Security Procedure Organization and Navigation Device*.
       Das Framework fasst technische und organisatorische Maßnahmen zur Reaktion auf Sicherheitsvorfälle zusammen und strukturiert sie.
       R3SPOND basiert auf dem NIST Incident Response Lifecycle, erweitert das Modell jedoch, indem die ursprünglichen vier Phasen weiter aufgeteilt und um praktische Schritte und konkrete Handlungsempfehlungen ergänzt werden.
       Ergänzend zu den technischen Aspekten decken zusätzliche Phasen wie *Inititale Krisensitzung*, *Interne Kommunikation* und *Lösegeldverhandlung* organisatorische Maßnahmen und Themen ab, die berücksichtigt werden müssen.
       Mit insgesamt 16 Phasen bildet das Framework den gesamten Incident-Response-Prozess von Vorbereitung bis hin zu Vorfallsabschluss und Nachbereitung ab und kann als allgemeiner Leitfaden für die Orientierung im Incident Management dienen; aufgrund der Einzigartigkeit jedes IT-Sicherheitsvorfalls ist jedoch eine projektspezifische Umsetzung der Maßnahmen erforderlich.
+  flowchart_headline: R3SPOND Prozess
   flowchart:  ../../assets/images/de/r3spond_flowchart.png
   matrix:
     toolbar:
