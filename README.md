@@ -7,6 +7,12 @@ It builds on the NIST incident response lifecycle, but extends it into a more op
 
 To allow responders, crisis managers and decision-makers to understand phases, objectives, responsibilities and measures without forcing them into a rigid linear process the framework is presented in a matrix-inspired structure to provide a high-level map of the incident response process.
 
+## Quick Start
+
+Start by browsing [R3SPOND on GitHub Pages](https://sva-cybersecurity.github.io/R3SPOND/) or download the built framework for offline usage.
+
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-green?logo=github)](https://sva-cybersecurity.github.io/R3SPOND/R3SPOND.zip)
+
 ## Installation und Build
 
 Install mkdocs with all required plugins and theme:
