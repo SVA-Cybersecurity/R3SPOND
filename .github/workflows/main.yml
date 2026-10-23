@@ -1,9 +1,19 @@
-name: Build MkDocs
+name: Build and Publish MkDocs
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -13,7 +23,8 @@ jobs:
       image: python:3.11
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: |
@@ -24,13 +35,11 @@ jobs:
         run: |
           mkdocs build -d site
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: R3SPOND Incident Response Framework
-          path: |
-            site/
-            R3SPOND_START.html
+      - name: Create downloadable ZIP
+        run: |
+          cd site
+          zip -r R3SPOND.zip .
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
