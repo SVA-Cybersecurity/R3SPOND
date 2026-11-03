@@ -1,5 +1,6 @@
 site_name: R3SPOND Incident Response Framework
 copyright: R3SPOND Incident Response Framework
+site_url: https://sva-cybersecurity.github.io/R3SPOND/
 
 # theme configuration
 theme:
