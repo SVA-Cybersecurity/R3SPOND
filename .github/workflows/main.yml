@@ -35,10 +35,10 @@ jobs:
         run: |
           mkdocs build -d site
 
-      - name: Create downloadable ZIP
-        run: |
-          cd site
-          zip -r R3SPOND.zip .
+      #- name: Create downloadable ZIP
+      #  run: |
+      #    cd site
+      #    zip -r R3SPOND.zip .
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
