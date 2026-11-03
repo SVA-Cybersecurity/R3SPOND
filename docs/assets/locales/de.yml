@@ -58,7 +58,7 @@ index:
       Ergänzend zu den technischen Aspekten decken zusätzliche Phasen wie *Inititale Krisensitzung*, *Interne Kommunikation* und *Lösegeldverhandlung* organisatorische Maßnahmen und Themen ab, die berücksichtigt werden müssen.
       Mit insgesamt 16 Phasen bildet das Framework den gesamten Incident-Response-Prozess von Vorbereitung bis hin zu Vorfallsabschluss und Nachbereitung ab und kann als allgemeiner Leitfaden für die Orientierung im Incident Management dienen; aufgrund der Einzigartigkeit jedes IT-Sicherheitsvorfalls ist jedoch eine projektspezifische Umsetzung der Maßnahmen erforderlich.
   flowchart_headline: R3SPOND Prozess
-  flowchart:  ../../assets/images/de/r3spond_flowchart.png
+  flowchart:  ../assets/images/de/r3spond_flowchart.png
   matrix:
     toolbar:
       expand_all: "Alle Substeps anzeigen"
