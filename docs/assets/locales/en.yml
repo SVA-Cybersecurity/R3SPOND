@@ -58,7 +58,7 @@ index:
     Complementary to the technical aspects additional phases like *Initial crisis meeting*, *Internal Communication* and *Negotiation over ransom* cover organizational measures and topics that need to be taken into account.
     With a total of 16 phases the framework covers the incident response process from preparation to incident closure and follow-up and can serve as a general guide for orientation in incident management; however, due to the uniqueness of each IT security incident, a project-specific implementation of the measures is required.
   flowchart_headline: R3SPOND Process
-  flowchart: ./assets/images/en/r3spond_flowchart.png
+  flowchart: assets/images/en/r3spond_flowchart.png
   matrix:
     toolbar:
       expand_all: "Show all substeps"
